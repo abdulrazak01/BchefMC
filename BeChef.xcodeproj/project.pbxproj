@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D5EE2262551FA2000227372 /* ReceiptVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5EE2252551FA2000227372 /* ReceiptVC.swift */; };
+		3D5EE22E2551FE5900227372 /* CustomTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5EE22D2551FE5900227372 /* CustomTVC.swift */; };
+		3D5EE23625525B7100227372 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D5EE23525525B7100227372 /* CloudKit.framework */; };
+		4065A45425511AD700D36A14 /* IngredientsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4065A45325511AD700D36A14 /* IngredientsTableViewController.swift */; };
+		4065A45F2551379500D36A14 /* mushroom.png in Resources */ = {isa = PBXBuildFile; fileRef = 4065A4572551379500D36A14 /* mushroom.png */; };
+		4065A4602551379500D36A14 /* noodle.png in Resources */ = {isa = PBXBuildFile; fileRef = 4065A4582551379500D36A14 /* noodle.png */; };
+		4065A4612551379500D36A14 /* egg.png in Resources */ = {isa = PBXBuildFile; fileRef = 4065A4592551379500D36A14 /* egg.png */; };
+		4065A4622551379500D36A14 /* cheese.png in Resources */ = {isa = PBXBuildFile; fileRef = 4065A45A2551379500D36A14 /* cheese.png */; };
+		4065A4632551379500D36A14 /* lettuce.png in Resources */ = {isa = PBXBuildFile; fileRef = 4065A45B2551379500D36A14 /* lettuce.png */; };
+		4065A4642551379500D36A14 /* chicken.png in Resources */ = {isa = PBXBuildFile; fileRef = 4065A45C2551379500D36A14 /* chicken.png */; };
+		4065A4652551379500D36A14 /* onion.png in Resources */ = {isa = PBXBuildFile; fileRef = 4065A45D2551379500D36A14 /* onion.png */; };
+		4065A4662551379500D36A14 /* chili.png in Resources */ = {isa = PBXBuildFile; fileRef = 4065A45E2551379500D36A14 /* chili.png */; };
 		40DB5F15254FD5D6009BAB81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB5F14254FD5D6009BAB81 /* AppDelegate.swift */; };
 		40DB5F17254FD5D6009BAB81 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB5F16254FD5D6009BAB81 /* SceneDelegate.swift */; };
 		40DB5F19254FD5D6009BAB81 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB5F18254FD5D6009BAB81 /* ViewController.swift */; };
@@ -14,9 +26,27 @@
 		40DB5F1F254FD5D6009BAB81 /* BeChef.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 40DB5F1D254FD5D6009BAB81 /* BeChef.xcdatamodeld */; };
 		40DB5F21254FD5D8009BAB81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40DB5F20254FD5D8009BAB81 /* Assets.xcassets */; };
 		40DB5F24254FD5D8009BAB81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40DB5F22254FD5D8009BAB81 /* LaunchScreen.storyboard */; };
+		40DB5F38254FD61A009BAB81 /* Rectangle.png in Resources */ = {isa = PBXBuildFile; fileRef = 40DB5F36254FD61A009BAB81 /* Rectangle.png */; };
+		40DB5F39254FD61A009BAB81 /* Group.png in Resources */ = {isa = PBXBuildFile; fileRef = 40DB5F37254FD61A009BAB81 /* Group.png */; };
+		40DB5F3E254FDA7E009BAB81 /* apple.png in Resources */ = {isa = PBXBuildFile; fileRef = 40DB5F3B254FDA7E009BAB81 /* apple.png */; };
+		40DB5F3F254FDA7E009BAB81 /* kotakkuning.png in Resources */ = {isa = PBXBuildFile; fileRef = 40DB5F3C254FDA7E009BAB81 /* kotakkuning.png */; };
+		40DB5F40254FDA7E009BAB81 /* kotakoren.png in Resources */ = {isa = PBXBuildFile; fileRef = 40DB5F3D254FDA7E009BAB81 /* kotakoren.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D5EE2252551FA2000227372 /* ReceiptVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptVC.swift; sourceTree = "<group>"; };
+		3D5EE22D2551FE5900227372 /* CustomTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTVC.swift; sourceTree = "<group>"; };
+		3D5EE23225525B6600227372 /* BeChef.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BeChef.entitlements; sourceTree = "<group>"; };
+		3D5EE23525525B7100227372 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		4065A45325511AD700D36A14 /* IngredientsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsTableViewController.swift; sourceTree = "<group>"; };
+		4065A4572551379500D36A14 /* mushroom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mushroom.png; path = Asset/mushroom.png; sourceTree = SOURCE_ROOT; };
+		4065A4582551379500D36A14 /* noodle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = noodle.png; path = Asset/noodle.png; sourceTree = SOURCE_ROOT; };
+		4065A4592551379500D36A14 /* egg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = egg.png; path = Asset/egg.png; sourceTree = SOURCE_ROOT; };
+		4065A45A2551379500D36A14 /* cheese.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cheese.png; path = Asset/cheese.png; sourceTree = SOURCE_ROOT; };
+		4065A45B2551379500D36A14 /* lettuce.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lettuce.png; path = Asset/lettuce.png; sourceTree = SOURCE_ROOT; };
+		4065A45C2551379500D36A14 /* chicken.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = chicken.png; path = Asset/chicken.png; sourceTree = SOURCE_ROOT; };
+		4065A45D2551379500D36A14 /* onion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = onion.png; path = Asset/onion.png; sourceTree = SOURCE_ROOT; };
+		4065A45E2551379500D36A14 /* chili.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = chili.png; path = Asset/chili.png; sourceTree = SOURCE_ROOT; };
 		40DB5F11254FD5D6009BAB81 /* BeChef.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeChef.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40DB5F14254FD5D6009BAB81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		40DB5F16254FD5D6009BAB81 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +56,11 @@
 		40DB5F20254FD5D8009BAB81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		40DB5F23254FD5D8009BAB81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		40DB5F25254FD5D8009BAB81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40DB5F36254FD61A009BAB81 /* Rectangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Rectangle.png; path = ../../Asset/Rectangle.png; sourceTree = "<group>"; };
+		40DB5F37254FD61A009BAB81 /* Group.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Group.png; path = ../../Asset/Group.png; sourceTree = "<group>"; };
+		40DB5F3B254FDA7E009BAB81 /* apple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = apple.png; path = ../../Asset/apple.png; sourceTree = "<group>"; };
+		40DB5F3C254FDA7E009BAB81 /* kotakkuning.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = kotakkuning.png; path = ../../Asset/kotakkuning.png; sourceTree = "<group>"; };
+		40DB5F3D254FDA7E009BAB81 /* kotakoren.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = kotakoren.png; path = ../../Asset/kotakoren.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +68,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D5EE23625525B7100227372 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D5EE23425525B7100227372 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3D5EE23525525B7100227372 /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		40DB5F08254FD5D6009BAB81 = {
 			isa = PBXGroup;
 			children = (
 				40DB5F13254FD5D6009BAB81 /* BeChef */,
 				40DB5F12254FD5D6009BAB81 /* Products */,
+				3D5EE23425525B7100227372 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,16 +103,41 @@
 		40DB5F13254FD5D6009BAB81 /* BeChef */ = {
 			isa = PBXGroup;
 			children = (
+				3D5EE23225525B6600227372 /* BeChef.entitlements */,
 				40DB5F14254FD5D6009BAB81 /* AppDelegate.swift */,
 				40DB5F16254FD5D6009BAB81 /* SceneDelegate.swift */,
 				40DB5F18254FD5D6009BAB81 /* ViewController.swift */,
+				4065A45325511AD700D36A14 /* IngredientsTableViewController.swift */,
+				3D5EE2252551FA2000227372 /* ReceiptVC.swift */,
+				3D5EE22D2551FE5900227372 /* CustomTVC.swift */,
 				40DB5F1A254FD5D6009BAB81 /* Main.storyboard */,
 				40DB5F20254FD5D8009BAB81 /* Assets.xcassets */,
 				40DB5F22254FD5D8009BAB81 /* LaunchScreen.storyboard */,
 				40DB5F25254FD5D8009BAB81 /* Info.plist */,
+				40DB5F31254FD5F7009BAB81 /* Gambar */,
 				40DB5F1D254FD5D6009BAB81 /* BeChef.xcdatamodeld */,
 			);
 			path = BeChef;
+			sourceTree = "<group>";
+		};
+		40DB5F31254FD5F7009BAB81 /* Gambar */ = {
+			isa = PBXGroup;
+			children = (
+				40DB5F3B254FDA7E009BAB81 /* apple.png */,
+				4065A45A2551379500D36A14 /* cheese.png */,
+				4065A45C2551379500D36A14 /* chicken.png */,
+				4065A45E2551379500D36A14 /* chili.png */,
+				4065A4592551379500D36A14 /* egg.png */,
+				4065A45B2551379500D36A14 /* lettuce.png */,
+				4065A4572551379500D36A14 /* mushroom.png */,
+				4065A4582551379500D36A14 /* noodle.png */,
+				4065A45D2551379500D36A14 /* onion.png */,
+				40DB5F3C254FDA7E009BAB81 /* kotakkuning.png */,
+				40DB5F3D254FDA7E009BAB81 /* kotakoren.png */,
+				40DB5F37254FD61A009BAB81 /* Group.png */,
+				40DB5F36254FD61A009BAB81 /* Rectangle.png */,
+			);
+			path = Gambar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,9 +197,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40DB5F39254FD61A009BAB81 /* Group.png in Resources */,
+				4065A45F2551379500D36A14 /* mushroom.png in Resources */,
 				40DB5F24254FD5D8009BAB81 /* LaunchScreen.storyboard in Resources */,
+				4065A4632551379500D36A14 /* lettuce.png in Resources */,
+				40DB5F38254FD61A009BAB81 /* Rectangle.png in Resources */,
+				4065A4662551379500D36A14 /* chili.png in Resources */,
 				40DB5F21254FD5D8009BAB81 /* Assets.xcassets in Resources */,
+				40DB5F3E254FDA7E009BAB81 /* apple.png in Resources */,
+				4065A4652551379500D36A14 /* onion.png in Resources */,
+				4065A4642551379500D36A14 /* chicken.png in Resources */,
+				4065A4602551379500D36A14 /* noodle.png in Resources */,
+				40DB5F3F254FDA7E009BAB81 /* kotakkuning.png in Resources */,
+				40DB5F40254FDA7E009BAB81 /* kotakoren.png in Resources */,
 				40DB5F1C254FD5D6009BAB81 /* Main.storyboard in Resources */,
+				4065A4622551379500D36A14 /* cheese.png in Resources */,
+				4065A4612551379500D36A14 /* egg.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,9 +224,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				40DB5F1F254FD5D6009BAB81 /* BeChef.xcdatamodeld in Sources */,
+				3D5EE2262551FA2000227372 /* ReceiptVC.swift in Sources */,
 				40DB5F19254FD5D6009BAB81 /* ViewController.swift in Sources */,
 				40DB5F15254FD5D6009BAB81 /* AppDelegate.swift in Sources */,
+				4065A45425511AD700D36A14 /* IngredientsTableViewController.swift in Sources */,
 				40DB5F17254FD5D6009BAB81 /* SceneDelegate.swift in Sources */,
+				3D5EE22E2551FE5900227372 /* CustomTVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,8 +376,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BeChef/BeChef.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5GZXGAQ3YM;
+				DEVELOPMENT_TEAM = 5UFXUU3GMA;
 				INFOPLIST_FILE = BeChef/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -309,8 +396,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BeChef/BeChef.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5GZXGAQ3YM;
+				DEVELOPMENT_TEAM = 5UFXUU3GMA;
 				INFOPLIST_FILE = BeChef/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
