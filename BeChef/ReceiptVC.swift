@@ -11,15 +11,25 @@ class ReceiptVC: UIViewController {
 
     @IBOutlet weak var tblView: UITableView!
     
+    
     let database = CKContainer.default().publicCloudDatabase
     
+    @IBOutlet weak var searchBar: UISearchBar!
     
     var arrayReminder = [CKRecord]()
+    var searchArr = [CKRecord]()
     
+    var searching = false
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        let refreshcontrol = UIRefreshControl()
+        refreshcontrol.attributedTitle = NSAttributedString(string: "Pull To Refresh")
+        refreshcontrol.addTarget(self, action: #selector(querydatabase), for: .valueChanged)
         querydatabase()
+        self.searchBar.delegate = self
+        self.tblView.refreshControl = refreshcontrol
+        
+       
         // Do any additional setup after loading the view.
     }
     
@@ -34,12 +44,14 @@ class ReceiptVC: UIViewController {
     }
     */
     
-    func querydatabase() {
+    @objc func querydatabase() {
         let query = CKQuery(recordType: "bechef",predicate: NSPredicate(value: true))
         database.perform(query,inZoneWith: nil) { (records, _) in
             guard let records = records else { return }
             self.arrayReminder = records
-            print(self.arrayReminder)
+           // print(self.arrayReminder)
+            self.searchArr = self.arrayReminder
+            print(self.searchArr)
             DispatchQueue.main.async {
                 self.tblView.reloadData()
             }
@@ -53,18 +65,18 @@ extension ReceiptVC: UITableViewDataSource,UITableViewDelegate{
     
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-            return 250
+            return 260
     }
    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-    return arrayReminder.count
+    return searchArr.count
     }
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tblView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CustomTVC
-        let item = arrayReminder[indexPath.row].value(forKey: "title") as! String
-        let items = arrayReminder[indexPath.row].value(forKey: "description") as! String
+        let item = searchArr[indexPath.row].value(forKey: "title") as! String
+        let items = searchArr[indexPath.row].value(forKey: "description") as! String
         
         cell.lbltitle?.text = item
         cell.lbldeskripsi?.text = items
@@ -84,5 +96,16 @@ extension ReceiptVC: UITableViewDataSource,UITableViewDelegate{
         vc?.image = pictures[indexPath.row]
         vc?.tittle = titles[indexPath.row]
         vc?.deskripsion = deskripsi[indexPath.row] */
+    }
+}
+
+extension ReceiptVC: UISearchBarDelegate {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        print(searchText)
+        searchArr = arrayReminder.filter({ (record) -> Bool in
+            return (record.value(forKey: "title") as! String).contains(searchText)
+            
+        })
+        tblView.reloadData()
     }
 }
