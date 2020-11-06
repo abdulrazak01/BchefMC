@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YJF-xs-Yuj">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
@@ -48,7 +48,8 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zIH-aH-lK7">
                                 <rect key="frame" x="107" y="751" width="200" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="Rectangle.png"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Find Recipe"/>
                                 <connections>
                                     <segue destination="m5p-cP-eub" kind="show" id="80F-S7-l2F"/>
                                 </connections>
@@ -57,13 +58,6 @@
                                 <rect key="frame" x="103" y="437" width="208" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Recommended Receipt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6tI-TJ-Eom">
-                                <rect key="frame" x="125" y="765" width="150" height="17"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -81,6 +75,7 @@
                     <navigationItem key="navigationItem" id="4mP-Mb-LwX"/>
                     <connections>
                         <outlet property="ingredientsLabel" destination="vkV-od-ChQ" id="ixx-lS-H1d"/>
+                        <outlet property="searchButton" destination="zIH-aH-lK7" id="6aL-58-Mrh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -92,7 +87,7 @@
             <objects>
                 <tableViewController id="vKE-7p-M7u" customClass="IngredientsTableViewController" customModule="BeChef" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="vOx-Rh-z97">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <sections>
@@ -217,7 +212,32 @@
                             <outlet property="delegate" destination="vKE-7p-M7u" id="6oK-18-3bD"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Pick your Ingredients" id="57f-SN-mxA"/>
+                    <navigationItem key="navigationItem" title="Pick your Ingredients" id="57f-SN-mxA">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="6za-wN-d6K">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="7dI-OC-Xsy">
+                                <rect key="frame" x="302" y="13" width="92" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Done"/>
+                                <connections>
+                                    <action selector="doneButtonTap:" destination="vKE-7p-M7u" eventType="touchUpInside" id="9JE-HK-sNq"/>
+                                </connections>
+                            </button>
+                            <connections>
+                                <action selector="doneButtonTap:" destination="vKE-7p-M7u" id="Og7-SI-SNb"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="apple" destination="t8f-gz-MAk" id="lb5-GK-H4V"/>
+                        <outlet property="cheese" destination="1NK-dD-PUO" id="JfD-Xj-Jf8"/>
+                        <outlet property="chicken" destination="Nwq-NW-GFB" id="4Tu-5d-rZY"/>
+                        <outlet property="chili" destination="0RO-fU-5Wa" id="8Bj-P0-dlW"/>
+                        <outlet property="egg" destination="Alb-OA-mqo" id="FXr-FE-kGM"/>
+                        <outlet property="lettuce" destination="c2Y-KV-MCj" id="FH9-Hp-cUK"/>
+                        <outlet property="mushroom" destination="j5Q-4M-xp4" id="Dnv-vt-x7l"/>
+                        <outlet property="noodle" destination="766-hm-rqx" id="Tgw-Ew-9AL"/>
+                        <outlet property="onion" destination="K8z-KD-cpf" id="zd1-nD-Ywn"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uGg-SN-ixO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -228,11 +248,11 @@
             <objects>
                 <viewController id="m5p-cP-eub" customClass="ReceiptVC" customModule="BeChef" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0T1-Cj-uIN">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qiy-Sf-Yqp">
-                                <rect key="frame" x="0.0" y="138" width="414" height="724"/>
+                                <rect key="frame" x="0.0" y="50" width="414" height="758"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="260" id="ev0-dx-4Cr" customClass="CustomTVC" customModule="BeChef" customModuleProvider="target">
@@ -306,7 +326,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="5VO-DL-4rC"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i99-5N-GY8">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -318,29 +338,10 @@
             </objects>
             <point key="canvasLocation" x="1805.7971014492755" y="93.75"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="3ab-fc-I9n">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YJF-xs-Yuj" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vgd-B1-a6U">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="sma-Qa-2nn"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="42Q-15-Xk6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="93.75"/>
-        </scene>
     </scenes>
     <resources>
         <image name="46-465620_under-construction-icon-png-transparent-png" width="860" height="454"/>
         <image name="Group.png" width="556" height="482"/>
-        <image name="Rectangle.png" width="193" height="44"/>
         <image name="apple.png" width="62" height="106"/>
         <image name="cheese.png" width="82" height="106"/>
         <image name="chicken.png" width="82" height="112"/>
