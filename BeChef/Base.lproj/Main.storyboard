@@ -51,7 +51,7 @@
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Find Recipe"/>
                                 <connections>
-                                    <segue destination="m5p-cP-eub" kind="show" id="80F-S7-l2F"/>
+                                    <segue destination="m5p-cP-eub" kind="show" identifier="segueGoTo" id="80F-S7-l2F"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tap here to add ingredients" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k0B-NV-qvn">
@@ -294,8 +294,15 @@
                                     <outlet property="delegate" destination="m5p-cP-eub" id="7ZF-2h-OcV"/>
                                 </connections>
                             </tableView>
-                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Dn-NA-IMQ">
-                                <rect key="frame" x="0.0" y="88" width="414" height="44"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VDK-nl-oGv">
+                                <rect key="frame" x="37" y="0.0" width="213" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ixv-3L-MAn">
+                                <rect key="frame" x="0.0" y="6" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
@@ -311,7 +318,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="7TO-Fj-8u0"/>
                     <connections>
-                        <outlet property="searchBar" destination="5Dn-NA-IMQ" id="wA7-MQ-Msy"/>
+                        <outlet property="lblfilter" destination="VDK-nl-oGv" id="BUZ-Es-7i1"/>
+                        <outlet property="searchBar" destination="Ixv-3L-MAn" id="2Yf-Iy-Ozn"/>
                         <outlet property="tblView" destination="qiy-Sf-Yqp" id="OKz-O2-1oj"/>
                     </connections>
                 </viewController>

@@ -11,6 +11,7 @@ class ReceiptVC: UIViewController {
 
     @IBOutlet weak var tblView: UITableView!
     
+    @IBOutlet weak var lblfilter: UILabel!
     
     let database = CKContainer.default().publicCloudDatabase
     
@@ -19,17 +20,23 @@ class ReceiptVC: UIViewController {
     var arrayReminder = [CKRecord]()
     var searchArr = [CKRecord]()
     
+    
+    var finalbahan = ""
+ 
     var searching = false
     override func viewDidLoad() {
         super.viewDidLoad()
+        searchBar.delegate = self
         let refreshcontrol = UIRefreshControl()
         refreshcontrol.attributedTitle = NSAttributedString(string: "Pull To Refresh")
         refreshcontrol.addTarget(self, action: #selector(querydatabase), for: .valueChanged)
         querydatabase()
-        self.searchBar.delegate = self
+       
         self.tblView.refreshControl = refreshcontrol
         
-       
+        lblfilter.text = finalbahan
+        
+        print("ini diluar \(finalbahan)")
         // Do any additional setup after loading the view.
     }
     
@@ -44,6 +51,10 @@ class ReceiptVC: UIViewController {
     }
     */
     
+    
+    
+    
+
     @objc func querydatabase() {
         let query = CKQuery(recordType: "bechef",predicate: NSPredicate(value: true))
         database.perform(query,inZoneWith: nil) { (records, _) in
@@ -51,14 +62,14 @@ class ReceiptVC: UIViewController {
             self.arrayReminder = records
            // print(self.arrayReminder)
             self.searchArr = self.arrayReminder
-            print(self.searchArr)
+           // print(self.searchArr)
             DispatchQueue.main.async {
                 self.tblView.reloadData()
             }
         }
     }
 
-
+ 
 }
 
 extension ReceiptVC: UITableViewDataSource,UITableViewDelegate{
@@ -68,16 +79,27 @@ extension ReceiptVC: UITableViewDataSource,UITableViewDelegate{
             return 260
     }
    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
+   
     return searchArr.count
+   // return searchArr.filter({ (record) -> Bool in
+     //   return (record.value(forKey: "ingredient") as! String).contains(finalbahan)
+       
+    //}).count
     }
+    
+   
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tblView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CustomTVC
+     //   searchArr = arrayReminder.filter({ (record) -> Bool in
+       //     return (record.value(forKey: "ingredient") as! String).contains(finalbahan)
+           
+        //})
+       // print(searchArr)
         let item = searchArr[indexPath.row].value(forKey: "title") as! String
         let items = searchArr[indexPath.row].value(forKey: "description") as! String
-        
+        print("ini didalam \(finalbahan)")
         cell.lbltitle?.text = item
         cell.lbldeskripsi?.text = items
         
@@ -104,8 +126,9 @@ extension ReceiptVC: UISearchBarDelegate {
         print(searchText)
         searchArr = arrayReminder.filter({ (record) -> Bool in
             return (record.value(forKey: "title") as! String).contains(searchText)
-            
+           
         })
         tblView.reloadData()
     }
+   
 }

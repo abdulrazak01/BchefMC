@@ -9,6 +9,7 @@ import UIKit
 
 protocol IngredientsDelegate: class {
     func finishSelectIngredients(selectedIngredients: [String])
+    
 }
 
 class IngredientsTableViewController: UITableViewController {
@@ -26,7 +27,7 @@ class IngredientsTableViewController: UITableViewController {
     
     
     // Array isinya tag             0     1      2          3
-    var ingredientsNameCollection = ["", "Apple", "Cheese", "Chicken", "Chili", "Egg", "Lettuce", "Mushroom", "Noodle", "Onion"]
+    var ingredientsNameCollection = ["", "Telur", "Terong", "Chicken", "Chili", "Egg", "Lettuce", "Mushroom", "Noodle", "Onion"]
     var buttonTagsCollection: [Int] = []
     
     // variable untuk menampung hasil pilihan igredients

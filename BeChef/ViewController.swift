@@ -29,20 +29,28 @@ class ViewController: UIViewController, IngredientsDelegate {
                     // Step 4
                     vc.delegate = self
                 }
+               
             }
+        }
+        else if segue.identifier == "segueGoTo" {
+            var vc1 = segue.destination as! ReceiptVC
+            vc1.finalbahan = ingredientsLabel.text!
         }
     }
     
+   
     // Step 6
     // conform to IngredientsDelegate
     func finishSelectIngredients(selectedIngredients: [String]) {
-        ingredientsLabel.text = selectedIngredients.joined(separator: ", ")
+        ingredientsLabel.text = selectedIngredients.joined(separator: " ")
     
         self.selectedIngredients = selectedIngredients
         if self.selectedIngredients.count > 0 {
         // Enable button
             searchButton.isEnabled = true
             searchButton.backgroundColor = .orange
+            //performSegue(withIdentifier: "segueGoTo", sender: self)
+            
         } else {
             searchButton.isEnabled = false
             searchButton.backgroundColor = .gray
