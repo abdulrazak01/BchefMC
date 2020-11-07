@@ -26,7 +26,7 @@ class ReceiptVC: UIViewController {
     var searching = false
     override func viewDidLoad() {
         super.viewDidLoad()
-        searchBar.delegate = self
+      //  searchBar.delegate = self
         let refreshcontrol = UIRefreshControl()
         refreshcontrol.attributedTitle = NSAttributedString(string: "Pull To Refresh")
         refreshcontrol.addTarget(self, action: #selector(querydatabase), for: .valueChanged)
@@ -80,11 +80,11 @@ extension ReceiptVC: UITableViewDataSource,UITableViewDelegate{
     }
    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
    
-    return searchArr.count
-   // return searchArr.filter({ (record) -> Bool in
-     //   return (record.value(forKey: "ingredient") as! String).contains(finalbahan)
+  
+    return searchArr.filter({ (record) -> Bool in
+        return (record.value(forKey: "ingredient") as! String).contains(finalbahan)
        
-    //}).count
+    }).count
     }
     
    
@@ -92,14 +92,16 @@ extension ReceiptVC: UITableViewDataSource,UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tblView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CustomTVC
-     //   searchArr = arrayReminder.filter({ (record) -> Bool in
-       //     return (record.value(forKey: "ingredient") as! String).contains(finalbahan)
+        searchArr = arrayReminder.filter({ (record) -> Bool in
+            return (record.value(forKey: "ingredient") as! String).contains(finalbahan)
            
-        //})
+        })
        // print(searchArr)
         let item = searchArr[indexPath.row].value(forKey: "title") as! String
         let items = searchArr[indexPath.row].value(forKey: "description") as! String
-        print("ini didalam \(finalbahan)")
+        let imageasset: CKAsset = searchArr[indexPath.row].value(forKey: "images") as! CKAsset
+        cell.img.image = UIImage(contentsOfFile: imageasset.fileURL!.path)
+        //print("ini didalam \(finalbahan)")
         cell.lbltitle?.text = item
         cell.lbldeskripsi?.text = items
         
@@ -121,7 +123,7 @@ extension ReceiptVC: UITableViewDataSource,UITableViewDelegate{
     }
 }
 
-extension ReceiptVC: UISearchBarDelegate {
+/*extension ReceiptVC: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         print(searchText)
         searchArr = arrayReminder.filter({ (record) -> Bool in
@@ -131,4 +133,4 @@ extension ReceiptVC: UISearchBarDelegate {
         tblView.reloadData()
     }
    
-}
+} */
