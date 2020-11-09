@@ -7,6 +7,15 @@
 
 import UIKit
 import CloudKit
+
+struct receiptmodel {
+    var title: String
+    var seasoning: String
+    var instruction: String
+    var ingredient: String
+    var images: String
+    var description: String
+}
 class ReceiptVC: UIViewController {
 
     @IBOutlet weak var tblView: UITableView!
@@ -19,8 +28,8 @@ class ReceiptVC: UIViewController {
     
     var arrayReminder = [CKRecord]()
     var searchArr = [CKRecord]()
-    
-    
+    var receiptdetail = [receiptmodel]()
+   
     var finalbahan = ""
  
     var searching = false
@@ -40,6 +49,10 @@ class ReceiptVC: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as! DetailReceiptVC
+        
+    }
 
     /*
     // MARK: - Navigation
@@ -62,6 +75,7 @@ class ReceiptVC: UIViewController {
             self.arrayReminder = records
            // print(self.arrayReminder)
             self.searchArr = self.arrayReminder
+          //  self.receiptdetail = self.searchArr as NSString
            // print(self.searchArr)
             DispatchQueue.main.async {
                 self.tblView.reloadData()
@@ -80,11 +94,23 @@ extension ReceiptVC: UITableViewDataSource,UITableViewDelegate{
     }
    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
    
-  
-    return searchArr.filter({ (record) -> Bool in
+    let searchTerms = finalbahan.components(separatedBy: " ").filter{ $0 != "" }
+   /* return searchArr.filter({ (record) -> Bool in
+       
         return (record.value(forKey: "ingredient") as! String).contains(finalbahan)
        
+    }).count */
+    
+    return searchArr.filter({ (record) -> Bool in
+        for term in searchTerms {
+            if (record.value(forKey: "ingredient") as! String).lowercased().contains(term.lowercased()) {
+                return true
+            }
+        }
+        //(record.value(forKey: "ingredient") as! String).contains(finalbahan)
+     return false
     }).count
+    
     }
     
    
@@ -92,9 +118,15 @@ extension ReceiptVC: UITableViewDataSource,UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tblView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CustomTVC
+        let searchTerms = finalbahan.components(separatedBy: " ").filter{$0 != ""}
         searchArr = arrayReminder.filter({ (record) -> Bool in
-            return (record.value(forKey: "ingredient") as! String).contains(finalbahan)
-           
+            for term in searchTerms {
+                if (record.value(forKey: "ingredient") as! String).lowercased().contains(term.lowercased()) {
+                    return true
+                }
+            }
+            //(record.value(forKey: "ingredient") as! String).contains(finalbahan)
+         return false
         })
        // print(searchArr)
         let item = searchArr[indexPath.row].value(forKey: "title") as! String
@@ -115,11 +147,17 @@ extension ReceiptVC: UITableViewDataSource,UITableViewDelegate{
     
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
- /*       let vc = storyboard?.instantiateViewController(withIdentifier: "DetailViewController") as? DetailViewController
-        self.navigationController?.pushViewController(vc!, animated: true)
-        vc?.image = pictures[indexPath.row]
-        vc?.tittle = titles[indexPath.row]
-        vc?.deskripsion = deskripsi[indexPath.row] */
+       
+        
+        
+        /*let imageasset: CKAsset = searchArr[indexPath.row].value(forKey: "images") as! CKAsset
+        
+        vc?.tittle = searchArr[indexPath.row].value(forKey: "title") as! String
+        vc?.bumbu = searchArr[indexPath.row].value(forKey: "seasoning") as! String
+        vc?.step = searchArr[indexPath.row].value(forKey: "instruction") as! String
+        vc?.image = UIImage(contentsOfFile: imageasset.fileURL!.path)! */
+        
+        
     }
 }
 
