@@ -15,6 +15,7 @@ class DetailReceiptVC: UIViewController {
     @IBOutlet weak var lblstep: UITextView!
     
     
+    
     var image = UIImage()
     var tittle = ""
     var bumbu = ""

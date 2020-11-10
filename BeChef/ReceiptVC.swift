@@ -43,7 +43,6 @@ class ReceiptVC: UIViewController {
        
         self.tblView.refreshControl = refreshcontrol
         
-        lblfilter.text = finalbahan
         
         print("ini diluar \(finalbahan)")
         // Do any additional setup after loading the view.
