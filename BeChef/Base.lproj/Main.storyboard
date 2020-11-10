@@ -103,7 +103,6 @@
                                                 <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t8f-gz-MAk">
                                                     <rect key="frame" x="20" y="11" width="105" height="105"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <state key="normal" image="apple.png"/>
                                                     <connections>
                                                         <action selector="buttonTapped:" destination="vKE-7p-M7u" eventType="touchUpInside" id="Ael-Je-85A"/>
@@ -112,7 +111,6 @@
                                                 <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nwq-NW-GFB">
                                                     <rect key="frame" x="289" y="11" width="105" height="105"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <state key="normal" image="chicken.png"/>
                                                     <connections>
                                                         <action selector="buttonTapped:" destination="vKE-7p-M7u" eventType="touchUpInside" id="c9Z-84-WQr"/>
@@ -121,7 +119,6 @@
                                                 <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1NK-dD-PUO">
                                                     <rect key="frame" x="155" y="11" width="105" height="105"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <state key="normal" image="cheese.png"/>
                                                     <connections>
                                                         <action selector="buttonTapped:" destination="vKE-7p-M7u" eventType="touchUpInside" id="ojH-aU-swR"/>
@@ -140,7 +137,6 @@
                                                 <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0RO-fU-5Wa">
                                                     <rect key="frame" x="20" y="11" width="105" height="105"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <state key="normal" image="chili.png"/>
                                                     <connections>
                                                         <action selector="buttonTapped:" destination="vKE-7p-M7u" eventType="touchUpInside" id="Ukd-Tb-rof"/>
@@ -149,7 +145,6 @@
                                                 <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Alb-OA-mqo">
                                                     <rect key="frame" x="155" y="13" width="105" height="105"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <state key="normal" image="egg.png"/>
                                                     <connections>
                                                         <action selector="buttonTapped:" destination="vKE-7p-M7u" eventType="touchUpInside" id="VCB-FA-xwh"/>
@@ -158,7 +153,6 @@
                                                 <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c2Y-KV-MCj">
                                                     <rect key="frame" x="289" y="11" width="105" height="105"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <state key="normal" title="\" image="lettuce.png"/>
                                                     <connections>
                                                         <action selector="buttonTapped:" destination="vKE-7p-M7u" eventType="touchUpInside" id="Jg0-XV-zJ6"/>
@@ -177,7 +171,6 @@
                                                 <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j5Q-4M-xp4">
                                                     <rect key="frame" x="20" y="11" width="105" height="105"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <state key="normal" image="mushroom.png"/>
                                                     <connections>
                                                         <action selector="buttonTapped:" destination="vKE-7p-M7u" eventType="touchUpInside" id="WxI-yi-9XS"/>
@@ -186,7 +179,6 @@
                                                 <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="766-hm-rqx">
                                                     <rect key="frame" x="155" y="11" width="105" height="105"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <state key="normal" image="noodle.png"/>
                                                     <connections>
                                                         <action selector="buttonTapped:" destination="vKE-7p-M7u" eventType="touchUpInside" id="Tls-aK-Ob8"/>
@@ -195,7 +187,6 @@
                                                 <button opaque="NO" tag="9" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K8z-KD-cpf">
                                                     <rect key="frame" x="289" y="11" width="105" height="105"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <state key="normal" image="onion.png"/>
                                                     <connections>
                                                         <action selector="buttonTapped:" destination="vKE-7p-M7u" eventType="touchUpInside" id="XMd-Ns-elu"/>
@@ -432,15 +423,15 @@
     <resources>
         <image name="46-465620_under-construction-icon-png-transparent-png" width="860" height="454"/>
         <image name="Group.png" width="556" height="482"/>
-        <image name="apple.png" width="62" height="106"/>
-        <image name="cheese.png" width="82" height="106"/>
-        <image name="chicken.png" width="82" height="112"/>
-        <image name="chili.png" width="82" height="112"/>
-        <image name="egg.png" width="92" height="112"/>
-        <image name="lettuce.png" width="92" height="112"/>
-        <image name="mushroom.png" width="102" height="116"/>
-        <image name="noodle.png" width="102" height="116"/>
-        <image name="onion.png" width="58" height="116"/>
+        <image name="apple.png" width="210" height="210"/>
+        <image name="cheese.png" width="210" height="210"/>
+        <image name="chicken.png" width="210" height="210"/>
+        <image name="chili.png" width="210" height="210"/>
+        <image name="egg.png" width="210" height="210"/>
+        <image name="lettuce.png" width="210" height="210"/>
+        <image name="mushroom.png" width="210" height="210"/>
+        <image name="noodle.png" width="210" height="210"/>
+        <image name="onion.png" width="210" height="210"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

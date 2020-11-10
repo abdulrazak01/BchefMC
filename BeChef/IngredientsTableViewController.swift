@@ -53,7 +53,7 @@ class IngredientsTableViewController: UITableViewController {
         
         if let foundIndex = buttonTagsCollection.lastIndex(of: sender.tag) {
             buttonTagsCollection.remove(at: foundIndex)
-            sender.backgroundColor = .yellow
+            sender.backgroundColor = .white
         } else {
             buttonTagsCollection.append(sender.tag)
             sender.backgroundColor = .orange
