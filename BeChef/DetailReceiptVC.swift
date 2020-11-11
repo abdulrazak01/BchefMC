@@ -26,6 +26,9 @@ class DetailReceiptVC: UIViewController {
         lblbumbu.text = bumbu
         lblstep.text = step
         detailimg.image = image
+        
+        lblbumbu.isEditable = false
+        lblstep.isEditable = false
         // Do any additional setup after loading the view.
     }
     
