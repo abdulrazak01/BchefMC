@@ -12,14 +12,6 @@
 		3D5EE23625525B7100227372 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D5EE23525525B7100227372 /* CloudKit.framework */; };
 		3D5EE23C2556B70C00227372 /* DetailReceiptVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5EE23B2556B70C00227372 /* DetailReceiptVC.swift */; };
 		4065A45425511AD700D36A14 /* IngredientsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4065A45325511AD700D36A14 /* IngredientsTableViewController.swift */; };
-		4065A45F2551379500D36A14 /* mushroom.png in Resources */ = {isa = PBXBuildFile; fileRef = 4065A4572551379500D36A14 /* mushroom.png */; };
-		4065A4602551379500D36A14 /* noodle.png in Resources */ = {isa = PBXBuildFile; fileRef = 4065A4582551379500D36A14 /* noodle.png */; };
-		4065A4612551379500D36A14 /* egg.png in Resources */ = {isa = PBXBuildFile; fileRef = 4065A4592551379500D36A14 /* egg.png */; };
-		4065A4622551379500D36A14 /* cheese.png in Resources */ = {isa = PBXBuildFile; fileRef = 4065A45A2551379500D36A14 /* cheese.png */; };
-		4065A4632551379500D36A14 /* lettuce.png in Resources */ = {isa = PBXBuildFile; fileRef = 4065A45B2551379500D36A14 /* lettuce.png */; };
-		4065A4642551379500D36A14 /* chicken.png in Resources */ = {isa = PBXBuildFile; fileRef = 4065A45C2551379500D36A14 /* chicken.png */; };
-		4065A4652551379500D36A14 /* onion.png in Resources */ = {isa = PBXBuildFile; fileRef = 4065A45D2551379500D36A14 /* onion.png */; };
-		4065A4662551379500D36A14 /* chili.png in Resources */ = {isa = PBXBuildFile; fileRef = 4065A45E2551379500D36A14 /* chili.png */; };
 		40DB5F15254FD5D6009BAB81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB5F14254FD5D6009BAB81 /* AppDelegate.swift */; };
 		40DB5F17254FD5D6009BAB81 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB5F16254FD5D6009BAB81 /* SceneDelegate.swift */; };
 		40DB5F19254FD5D6009BAB81 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB5F18254FD5D6009BAB81 /* ViewController.swift */; };
@@ -29,9 +21,35 @@
 		40DB5F24254FD5D8009BAB81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40DB5F22254FD5D8009BAB81 /* LaunchScreen.storyboard */; };
 		40DB5F38254FD61A009BAB81 /* Rectangle.png in Resources */ = {isa = PBXBuildFile; fileRef = 40DB5F36254FD61A009BAB81 /* Rectangle.png */; };
 		40DB5F39254FD61A009BAB81 /* Group.png in Resources */ = {isa = PBXBuildFile; fileRef = 40DB5F37254FD61A009BAB81 /* Group.png */; };
-		40DB5F3E254FDA7E009BAB81 /* apple.png in Resources */ = {isa = PBXBuildFile; fileRef = 40DB5F3B254FDA7E009BAB81 /* apple.png */; };
 		40DB5F3F254FDA7E009BAB81 /* kotakkuning.png in Resources */ = {isa = PBXBuildFile; fileRef = 40DB5F3C254FDA7E009BAB81 /* kotakkuning.png */; };
 		40DB5F40254FDA7E009BAB81 /* kotakoren.png in Resources */ = {isa = PBXBuildFile; fileRef = 40DB5F3D254FDA7E009BAB81 /* kotakoren.png */; };
+		40DF32C0255BAE17002EEE93 /* Tomat.png in Resources */ = {isa = PBXBuildFile; fileRef = 40DF32A8255BAE16002EEE93 /* Tomat.png */; };
+		40DF32C1255BAE17002EEE93 /* wortel.png in Resources */ = {isa = PBXBuildFile; fileRef = 40DF32A9255BAE16002EEE93 /* wortel.png */; };
+		40DF32C2255BAE17002EEE93 /* terasi.png in Resources */ = {isa = PBXBuildFile; fileRef = 40DF32AA255BAE16002EEE93 /* terasi.png */; };
+		40DF32C3255BAE17002EEE93 /* bawangputih.png in Resources */ = {isa = PBXBuildFile; fileRef = 40DF32AB255BAE16002EEE93 /* bawangputih.png */; };
+		40DF32C4255BAE17002EEE93 /* tauge.png in Resources */ = {isa = PBXBuildFile; fileRef = 40DF32AC255BAE16002EEE93 /* tauge.png */; };
+		40DF32C5255BAE17002EEE93 /* udang.png in Resources */ = {isa = PBXBuildFile; fileRef = 40DF32AD255BAE16002EEE93 /* udang.png */; };
+		40DF32C6255BAE17002EEE93 /* Keju.png in Resources */ = {isa = PBXBuildFile; fileRef = 40DF32AE255BAE16002EEE93 /* Keju.png */; };
+		40DF32C7255BAE17002EEE93 /* daging.png in Resources */ = {isa = PBXBuildFile; fileRef = 40DF32AF255BAE17002EEE93 /* daging.png */; };
+		40DF32C8255BAE17002EEE93 /* cabe.png in Resources */ = {isa = PBXBuildFile; fileRef = 40DF32B0255BAE17002EEE93 /* cabe.png */; };
+		40DF32C9255BAE17002EEE93 /* Telur.png in Resources */ = {isa = PBXBuildFile; fileRef = 40DF32B1255BAE17002EEE93 /* Telur.png */; };
+		40DF32CA255BAE17002EEE93 /* jamur.png in Resources */ = {isa = PBXBuildFile; fileRef = 40DF32B2255BAE17002EEE93 /* jamur.png */; };
+		40DF32CB255BAE17002EEE93 /* cumicumi.png in Resources */ = {isa = PBXBuildFile; fileRef = 40DF32B3255BAE17002EEE93 /* cumicumi.png */; };
+		40DF32CC255BAE17002EEE93 /* kentang.png in Resources */ = {isa = PBXBuildFile; fileRef = 40DF32B4255BAE17002EEE93 /* kentang.png */; };
+		40DF32CD255BAE17002EEE93 /* kol.png in Resources */ = {isa = PBXBuildFile; fileRef = 40DF32B5255BAE17002EEE93 /* kol.png */; };
+		40DF32CE255BAE17002EEE93 /* bawangmerah.png in Resources */ = {isa = PBXBuildFile; fileRef = 40DF32B6255BAE17002EEE93 /* bawangmerah.png */; };
+		40DF32CF255BAE17002EEE93 /* ikan.png in Resources */ = {isa = PBXBuildFile; fileRef = 40DF32B7255BAE17002EEE93 /* ikan.png */; };
+		40DF32D0255BAE17002EEE93 /* ayam.png in Resources */ = {isa = PBXBuildFile; fileRef = 40DF32B8255BAE17002EEE93 /* ayam.png */; };
+		40DF32D1255BAE17002EEE93 /* nasi.png in Resources */ = {isa = PBXBuildFile; fileRef = 40DF32B9255BAE17002EEE93 /* nasi.png */; };
+		40DF32D2255BAE17002EEE93 /* selada.png in Resources */ = {isa = PBXBuildFile; fileRef = 40DF32BA255BAE17002EEE93 /* selada.png */; };
+		40DF32D3255BAE17002EEE93 /* sosis.png in Resources */ = {isa = PBXBuildFile; fileRef = 40DF32BB255BAE17002EEE93 /* sosis.png */; };
+		40DF32D4255BAE17002EEE93 /* kembangkol.png in Resources */ = {isa = PBXBuildFile; fileRef = 40DF32BC255BAE17002EEE93 /* kembangkol.png */; };
+		40DF32D5255BAE17002EEE93 /* tahu.png in Resources */ = {isa = PBXBuildFile; fileRef = 40DF32BD255BAE17002EEE93 /* tahu.png */; };
+		40DF32D6255BAE17002EEE93 /* terong.png in Resources */ = {isa = PBXBuildFile; fileRef = 40DF32BE255BAE17002EEE93 /* terong.png */; };
+		40DF32D7255BAE17002EEE93 /* jagung.png in Resources */ = {isa = PBXBuildFile; fileRef = 40DF32BF255BAE17002EEE93 /* jagung.png */; };
+		40DF32DC255BB087002EEE93 /* tepung.png in Resources */ = {isa = PBXBuildFile; fileRef = 40DF32D9255BB087002EEE93 /* tepung.png */; };
+		40DF32DD255BB087002EEE93 /* mie.png in Resources */ = {isa = PBXBuildFile; fileRef = 40DF32DA255BB087002EEE93 /* mie.png */; };
+		40DF32DE255BB087002EEE93 /* spaghetti.png in Resources */ = {isa = PBXBuildFile; fileRef = 40DF32DB255BB087002EEE93 /* spaghetti.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,14 +59,6 @@
 		3D5EE23525525B7100227372 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		3D5EE23B2556B70C00227372 /* DetailReceiptVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailReceiptVC.swift; sourceTree = "<group>"; };
 		4065A45325511AD700D36A14 /* IngredientsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsTableViewController.swift; sourceTree = "<group>"; };
-		4065A4572551379500D36A14 /* mushroom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mushroom.png; path = Asset/mushroom.png; sourceTree = SOURCE_ROOT; };
-		4065A4582551379500D36A14 /* noodle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = noodle.png; path = Asset/noodle.png; sourceTree = SOURCE_ROOT; };
-		4065A4592551379500D36A14 /* egg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = egg.png; path = Asset/egg.png; sourceTree = SOURCE_ROOT; };
-		4065A45A2551379500D36A14 /* cheese.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cheese.png; path = Asset/cheese.png; sourceTree = SOURCE_ROOT; };
-		4065A45B2551379500D36A14 /* lettuce.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lettuce.png; path = Asset/lettuce.png; sourceTree = SOURCE_ROOT; };
-		4065A45C2551379500D36A14 /* chicken.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = chicken.png; path = Asset/chicken.png; sourceTree = SOURCE_ROOT; };
-		4065A45D2551379500D36A14 /* onion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = onion.png; path = Asset/onion.png; sourceTree = SOURCE_ROOT; };
-		4065A45E2551379500D36A14 /* chili.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = chili.png; path = Asset/chili.png; sourceTree = SOURCE_ROOT; };
 		40DB5F11254FD5D6009BAB81 /* BeChef.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeChef.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40DB5F14254FD5D6009BAB81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		40DB5F16254FD5D6009BAB81 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,9 +70,35 @@
 		40DB5F25254FD5D8009BAB81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		40DB5F36254FD61A009BAB81 /* Rectangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Rectangle.png; path = ../../Asset/Rectangle.png; sourceTree = "<group>"; };
 		40DB5F37254FD61A009BAB81 /* Group.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Group.png; path = ../../Asset/Group.png; sourceTree = "<group>"; };
-		40DB5F3B254FDA7E009BAB81 /* apple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = apple.png; path = ../../Asset/apple.png; sourceTree = "<group>"; };
 		40DB5F3C254FDA7E009BAB81 /* kotakkuning.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = kotakkuning.png; path = ../../Asset/kotakkuning.png; sourceTree = "<group>"; };
 		40DB5F3D254FDA7E009BAB81 /* kotakoren.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = kotakoren.png; path = ../../Asset/kotakoren.png; sourceTree = "<group>"; };
+		40DF32A8255BAE16002EEE93 /* Tomat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Tomat.png; path = Asset/Tomat.png; sourceTree = SOURCE_ROOT; };
+		40DF32A9255BAE16002EEE93 /* wortel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wortel.png; path = Asset/wortel.png; sourceTree = SOURCE_ROOT; };
+		40DF32AA255BAE16002EEE93 /* terasi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = terasi.png; path = Asset/terasi.png; sourceTree = SOURCE_ROOT; };
+		40DF32AB255BAE16002EEE93 /* bawangputih.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bawangputih.png; path = Asset/bawangputih.png; sourceTree = SOURCE_ROOT; };
+		40DF32AC255BAE16002EEE93 /* tauge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tauge.png; path = Asset/tauge.png; sourceTree = SOURCE_ROOT; };
+		40DF32AD255BAE16002EEE93 /* udang.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = udang.png; path = Asset/udang.png; sourceTree = SOURCE_ROOT; };
+		40DF32AE255BAE16002EEE93 /* Keju.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Keju.png; path = Asset/Keju.png; sourceTree = SOURCE_ROOT; };
+		40DF32AF255BAE17002EEE93 /* daging.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = daging.png; path = Asset/daging.png; sourceTree = SOURCE_ROOT; };
+		40DF32B0255BAE17002EEE93 /* cabe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cabe.png; path = Asset/cabe.png; sourceTree = SOURCE_ROOT; };
+		40DF32B1255BAE17002EEE93 /* Telur.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Telur.png; path = Asset/Telur.png; sourceTree = SOURCE_ROOT; };
+		40DF32B2255BAE17002EEE93 /* jamur.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = jamur.png; path = Asset/jamur.png; sourceTree = SOURCE_ROOT; };
+		40DF32B3255BAE17002EEE93 /* cumicumi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cumicumi.png; path = Asset/cumicumi.png; sourceTree = SOURCE_ROOT; };
+		40DF32B4255BAE17002EEE93 /* kentang.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = kentang.png; path = Asset/kentang.png; sourceTree = SOURCE_ROOT; };
+		40DF32B5255BAE17002EEE93 /* kol.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = kol.png; path = Asset/kol.png; sourceTree = SOURCE_ROOT; };
+		40DF32B6255BAE17002EEE93 /* bawangmerah.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bawangmerah.png; path = Asset/bawangmerah.png; sourceTree = SOURCE_ROOT; };
+		40DF32B7255BAE17002EEE93 /* ikan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ikan.png; path = Asset/ikan.png; sourceTree = SOURCE_ROOT; };
+		40DF32B8255BAE17002EEE93 /* ayam.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ayam.png; path = Asset/ayam.png; sourceTree = SOURCE_ROOT; };
+		40DF32B9255BAE17002EEE93 /* nasi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = nasi.png; path = Asset/nasi.png; sourceTree = SOURCE_ROOT; };
+		40DF32BA255BAE17002EEE93 /* selada.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = selada.png; path = Asset/selada.png; sourceTree = SOURCE_ROOT; };
+		40DF32BB255BAE17002EEE93 /* sosis.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sosis.png; path = Asset/sosis.png; sourceTree = SOURCE_ROOT; };
+		40DF32BC255BAE17002EEE93 /* kembangkol.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = kembangkol.png; path = Asset/kembangkol.png; sourceTree = SOURCE_ROOT; };
+		40DF32BD255BAE17002EEE93 /* tahu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tahu.png; path = Asset/tahu.png; sourceTree = SOURCE_ROOT; };
+		40DF32BE255BAE17002EEE93 /* terong.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = terong.png; path = Asset/terong.png; sourceTree = SOURCE_ROOT; };
+		40DF32BF255BAE17002EEE93 /* jagung.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = jagung.png; path = Asset/jagung.png; sourceTree = SOURCE_ROOT; };
+		40DF32D9255BB087002EEE93 /* tepung.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tepung.png; path = Asset/tepung.png; sourceTree = SOURCE_ROOT; };
+		40DF32DA255BB087002EEE93 /* mie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mie.png; path = Asset/mie.png; sourceTree = SOURCE_ROOT; };
+		40DF32DB255BB087002EEE93 /* spaghetti.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = spaghetti.png; path = Asset/spaghetti.png; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,15 +162,33 @@
 		40DB5F31254FD5F7009BAB81 /* Gambar */ = {
 			isa = PBXGroup;
 			children = (
-				40DB5F3B254FDA7E009BAB81 /* apple.png */,
-				4065A45A2551379500D36A14 /* cheese.png */,
-				4065A45C2551379500D36A14 /* chicken.png */,
-				4065A45E2551379500D36A14 /* chili.png */,
-				4065A4592551379500D36A14 /* egg.png */,
-				4065A45B2551379500D36A14 /* lettuce.png */,
-				4065A4572551379500D36A14 /* mushroom.png */,
-				4065A4582551379500D36A14 /* noodle.png */,
-				4065A45D2551379500D36A14 /* onion.png */,
+				40DF32B8255BAE17002EEE93 /* ayam.png */,
+				40DF32B6255BAE17002EEE93 /* bawangmerah.png */,
+				40DF32AB255BAE16002EEE93 /* bawangputih.png */,
+				40DF32B0255BAE17002EEE93 /* cabe.png */,
+				40DF32B3255BAE17002EEE93 /* cumicumi.png */,
+				40DF32AF255BAE17002EEE93 /* daging.png */,
+				40DF32B7255BAE17002EEE93 /* ikan.png */,
+				40DF32BF255BAE17002EEE93 /* jagung.png */,
+				40DF32B2255BAE17002EEE93 /* jamur.png */,
+				40DF32AE255BAE16002EEE93 /* Keju.png */,
+				40DF32BC255BAE17002EEE93 /* kembangkol.png */,
+				40DF32B4255BAE17002EEE93 /* kentang.png */,
+				40DF32B5255BAE17002EEE93 /* kol.png */,
+				40DF32DA255BB087002EEE93 /* mie.png */,
+				40DF32B9255BAE17002EEE93 /* nasi.png */,
+				40DF32BA255BAE17002EEE93 /* selada.png */,
+				40DF32BB255BAE17002EEE93 /* sosis.png */,
+				40DF32DB255BB087002EEE93 /* spaghetti.png */,
+				40DF32BD255BAE17002EEE93 /* tahu.png */,
+				40DF32AC255BAE16002EEE93 /* tauge.png */,
+				40DF32B1255BAE17002EEE93 /* Telur.png */,
+				40DF32D9255BB087002EEE93 /* tepung.png */,
+				40DF32AA255BAE16002EEE93 /* terasi.png */,
+				40DF32BE255BAE17002EEE93 /* terong.png */,
+				40DF32A8255BAE16002EEE93 /* Tomat.png */,
+				40DF32AD255BAE16002EEE93 /* udang.png */,
+				40DF32A9255BAE16002EEE93 /* wortel.png */,
 				40DB5F3C254FDA7E009BAB81 /* kotakkuning.png */,
 				40DB5F3D254FDA7E009BAB81 /* kotakoren.png */,
 				40DB5F37254FD61A009BAB81 /* Group.png */,
@@ -201,21 +255,39 @@
 			buildActionMask = 2147483647;
 			files = (
 				40DB5F39254FD61A009BAB81 /* Group.png in Resources */,
-				4065A45F2551379500D36A14 /* mushroom.png in Resources */,
+				40DF32C5255BAE17002EEE93 /* udang.png in Resources */,
+				40DF32CC255BAE17002EEE93 /* kentang.png in Resources */,
+				40DF32DD255BB087002EEE93 /* mie.png in Resources */,
+				40DF32C9255BAE17002EEE93 /* Telur.png in Resources */,
+				40DF32CB255BAE17002EEE93 /* cumicumi.png in Resources */,
+				40DF32C0255BAE17002EEE93 /* Tomat.png in Resources */,
+				40DF32C4255BAE17002EEE93 /* tauge.png in Resources */,
+				40DF32C7255BAE17002EEE93 /* daging.png in Resources */,
 				40DB5F24254FD5D8009BAB81 /* LaunchScreen.storyboard in Resources */,
-				4065A4632551379500D36A14 /* lettuce.png in Resources */,
+				40DF32CD255BAE17002EEE93 /* kol.png in Resources */,
+				40DF32C8255BAE17002EEE93 /* cabe.png in Resources */,
+				40DF32D0255BAE17002EEE93 /* ayam.png in Resources */,
+				40DF32DE255BB087002EEE93 /* spaghetti.png in Resources */,
+				40DF32C2255BAE17002EEE93 /* terasi.png in Resources */,
+				40DF32C6255BAE17002EEE93 /* Keju.png in Resources */,
+				40DF32D5255BAE17002EEE93 /* tahu.png in Resources */,
+				40DF32D7255BAE17002EEE93 /* jagung.png in Resources */,
+				40DF32DC255BB087002EEE93 /* tepung.png in Resources */,
 				40DB5F38254FD61A009BAB81 /* Rectangle.png in Resources */,
-				4065A4662551379500D36A14 /* chili.png in Resources */,
 				40DB5F21254FD5D8009BAB81 /* Assets.xcassets in Resources */,
-				40DB5F3E254FDA7E009BAB81 /* apple.png in Resources */,
-				4065A4652551379500D36A14 /* onion.png in Resources */,
-				4065A4642551379500D36A14 /* chicken.png in Resources */,
-				4065A4602551379500D36A14 /* noodle.png in Resources */,
+				40DF32D4255BAE17002EEE93 /* kembangkol.png in Resources */,
+				40DF32D6255BAE17002EEE93 /* terong.png in Resources */,
+				40DF32C1255BAE17002EEE93 /* wortel.png in Resources */,
 				40DB5F3F254FDA7E009BAB81 /* kotakkuning.png in Resources */,
+				40DF32CE255BAE17002EEE93 /* bawangmerah.png in Resources */,
+				40DF32D3255BAE17002EEE93 /* sosis.png in Resources */,
 				40DB5F40254FDA7E009BAB81 /* kotakoren.png in Resources */,
+				40DF32CA255BAE17002EEE93 /* jamur.png in Resources */,
+				40DF32D2255BAE17002EEE93 /* selada.png in Resources */,
+				40DF32D1255BAE17002EEE93 /* nasi.png in Resources */,
+				40DF32CF255BAE17002EEE93 /* ikan.png in Resources */,
 				40DB5F1C254FD5D6009BAB81 /* Main.storyboard in Resources */,
-				4065A4622551379500D36A14 /* cheese.png in Resources */,
-				4065A4612551379500D36A14 /* egg.png in Resources */,
+				40DF32C3255BAE17002EEE93 /* bawangputih.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

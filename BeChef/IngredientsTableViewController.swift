@@ -37,19 +37,25 @@ protocol IngredientsDelegate: class {
 class IngredientsTableViewController: UITableViewController {
     weak var delegate: IngredientsDelegate?
     
-    @IBOutlet weak var apple: UIButton!
-    @IBOutlet weak var cheese: UIButton!
-    @IBOutlet weak var chicken: UIButton!
-    @IBOutlet weak var chili: UIButton!
-    @IBOutlet weak var egg: UIButton!
-    @IBOutlet weak var lettuce: UIButton!
-    @IBOutlet weak var mushroom: UIButton!
-    @IBOutlet weak var noodle: UIButton!
-    @IBOutlet weak var onion: UIButton!
+    @IBOutlet weak var ayam: UIButton!
+    @IBOutlet weak var daging: UIButton!
+    @IBOutlet weak var ikan: UIButton!
+    @IBOutlet weak var jamur: UIButton!
+    @IBOutlet weak var kentang: UIButton!
+    @IBOutlet weak var mie: UIButton!
+    @IBOutlet weak var nasi: UIButton!
+    @IBOutlet weak var sosis: UIButton!
+    @IBOutlet weak var tahu: UIButton!
+    @IBOutlet weak var tauge: UIButton!
+    @IBOutlet weak var telur: UIButton!
+    @IBOutlet weak var terong: UIButton!
+    @IBOutlet weak var tomat: UIButton!
+    @IBOutlet weak var udang: UIButton!
+    @IBOutlet weak var wortel: UIButton!
     
     
     // Array isinya tag             0     1      2          3
-    var ingredientsNameCollection = ["", "Telur", "Terong", "Tahu", "Tauge", "Tempe", "Lettuce", "Mushroom", "Noodle", "Onion"]
+    var ingredientsNameCollection = ["", "Ayam", "Daging", "Ikan", "Jamur", "Kentang", "Mie", "Nasi", "Sosis", "Tahu", "Tauge", "Telur", "Terong", "Tomat", "Udang", "Wortel"]
     var buttonTagsCollection: [Int] = []
     
     // variable untuk menampung hasil pilihan igredients
@@ -59,15 +65,21 @@ class IngredientsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        apple.layer.cornerRadius = 10.0
-        cheese.layer.cornerRadius = 10.0
-        chicken.layer.cornerRadius = 10.0
-        chili.layer.cornerRadius = 10.0
-        egg.layer.cornerRadius = 10.0
-        lettuce.layer.cornerRadius = 10.0
-        mushroom.layer.cornerRadius = 10.0
-        noodle.layer.cornerRadius = 10.0
-        onion.layer.cornerRadius = 10.0
+        ayam.layer.cornerRadius = 10.0
+        daging.layer.cornerRadius = 10.0
+        ikan.layer.cornerRadius = 10.0
+        jamur.layer.cornerRadius = 10.0
+        kentang.layer.cornerRadius = 10.0
+        mie.layer.cornerRadius = 10.0
+        nasi.layer.cornerRadius = 10.0
+        sosis.layer.cornerRadius = 10.0
+        tahu.layer.cornerRadius = 10.0
+        tauge.layer.cornerRadius = 10.0
+        telur.layer.cornerRadius = 10.0
+        terong.layer.cornerRadius = 10.0
+        tomat.layer.cornerRadius = 10.0
+        udang.layer.cornerRadius = 10.0
+        wortel.layer.cornerRadius = 10.0
     }
     
     
