@@ -11,9 +11,12 @@ class DetailReceiptVC: UIViewController {
 
     @IBOutlet weak var lbltitle: UILabel!
     @IBOutlet weak var detailimg: UIImageView!
-    @IBOutlet weak var lblbumbu: UITextView!
-    @IBOutlet weak var lblstep: UITextView!
+
+    @IBOutlet weak var lblbumbu: UILabel!
+    @IBOutlet weak var lblstep: UILabel!
     
+    @IBOutlet weak var lblTitleSea: UILabel!
+    @IBOutlet weak var lblTitleStep: UILabel!
     
     
     var image = UIImage()
@@ -22,13 +25,17 @@ class DetailReceiptVC: UIViewController {
     var step = ""
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        lblTitleSea.text = "Seasoning"
+        lblTitleStep.text = "Instruction"
+        
         lbltitle.text = tittle
         lblbumbu.text = bumbu
         lblstep.text = step
         detailimg.image = image
         
-        lblbumbu.isEditable = false
-        lblstep.isEditable = false
+      //  lblbumbu.isEditable = false
+       // lblstep.isEditable = false
         // Do any additional setup after loading the view.
     }
     
