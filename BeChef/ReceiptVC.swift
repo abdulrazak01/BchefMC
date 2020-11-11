@@ -129,7 +129,7 @@ extension ReceiptVC: UITableViewDataSource,UITableViewDelegate{
         })
        // print(searchArr)
         let item = searchArr[indexPath.row].value(forKey: "title") as! String
-        let items = searchArr[indexPath.row].value(forKey: "description") as! String
+        let items = searchArr[indexPath.row].value(forKey: "ingredient") as! String
         let imageasset: CKAsset = searchArr[indexPath.row].value(forKey: "images") as! CKAsset
         cell.img.image = UIImage(contentsOfFile: imageasset.fileURL!.path)
         //print("ini didalam \(finalbahan)")
