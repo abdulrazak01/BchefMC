@@ -135,20 +135,20 @@
                                                         <action selector="buttonTapped:" destination="vKE-7p-M7u" eventType="touchUpInside" id="Ukd-Tb-rof"/>
                                                     </connections>
                                                 </button>
-                                                <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Alb-OA-mqo">
-                                                    <rect key="frame" x="155" y="13" width="105" height="105"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <state key="normal" image="Kangkung.png"/>
-                                                    <connections>
-                                                        <action selector="buttonTapped:" destination="vKE-7p-M7u" eventType="touchUpInside" id="VCB-FA-xwh"/>
-                                                    </connections>
-                                                </button>
                                                 <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c2Y-KV-MCj">
                                                     <rect key="frame" x="289" y="11" width="105" height="105"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <state key="normal" title="\" image="kentang.png"/>
+                                                    <state key="normal" title="\" image="Kangkung.png"/>
                                                     <connections>
                                                         <action selector="buttonTapped:" destination="vKE-7p-M7u" eventType="touchUpInside" id="Jg0-XV-zJ6"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Alb-OA-mqo">
+                                                    <rect key="frame" x="155" y="11" width="105" height="105"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" image="kacangpanjang.png"/>
+                                                    <connections>
+                                                        <action selector="buttonTapped:" destination="vKE-7p-M7u" eventType="touchUpInside" id="VCB-FA-xwh"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -164,25 +164,25 @@
                                                 <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j5Q-4M-xp4">
                                                     <rect key="frame" x="20" y="11" width="105" height="105"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <state key="normal" image="mie.png"/>
+                                                    <state key="normal" image="kentang.png"/>
                                                     <connections>
                                                         <action selector="buttonTapped:" destination="vKE-7p-M7u" eventType="touchUpInside" id="WxI-yi-9XS"/>
-                                                    </connections>
-                                                </button>
-                                                <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="766-hm-rqx">
-                                                    <rect key="frame" x="155" y="11" width="105" height="105"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <state key="normal" image="nasi.png"/>
-                                                    <connections>
-                                                        <action selector="buttonTapped:" destination="vKE-7p-M7u" eventType="touchUpInside" id="Tls-aK-Ob8"/>
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" tag="9" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K8z-KD-cpf">
                                                     <rect key="frame" x="289" y="11" width="105" height="105"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <state key="normal" image="sosis.png"/>
+                                                    <state key="normal" image="mie.png"/>
                                                     <connections>
                                                         <action selector="buttonTapped:" destination="vKE-7p-M7u" eventType="touchUpInside" id="XMd-Ns-elu"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="766-hm-rqx">
+                                                    <rect key="frame" x="155" y="11" width="105" height="105"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" image="kol.png"/>
+                                                    <connections>
+                                                        <action selector="buttonTapped:" destination="vKE-7p-M7u" eventType="touchUpInside" id="Tls-aK-Ob8"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -198,25 +198,25 @@
                                                 <button opaque="NO" tag="10" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pVd-zs-rbx">
                                                     <rect key="frame" x="20" y="11" width="105" height="105"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <state key="normal" image="tahu.png"/>
+                                                    <state key="normal" image="nasi.png"/>
                                                     <connections>
                                                         <action selector="buttonTapped:" destination="vKE-7p-M7u" eventType="touchUpInside" id="vMU-EZ-vrp"/>
-                                                    </connections>
-                                                </button>
-                                                <button opaque="NO" tag="11" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="17k-Ny-2mS">
-                                                    <rect key="frame" x="155" y="11" width="105" height="105"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <state key="normal" image="tauge.png"/>
-                                                    <connections>
-                                                        <action selector="buttonTapped:" destination="vKE-7p-M7u" eventType="touchUpInside" id="5bs-zH-KN8"/>
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" tag="12" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dhv-Ec-kGO">
                                                     <rect key="frame" x="289" y="11" width="105" height="105"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <state key="normal" image="Telur.png"/>
+                                                    <state key="normal" image="sosis.png"/>
                                                     <connections>
                                                         <action selector="buttonTapped:" destination="vKE-7p-M7u" eventType="touchUpInside" id="0nL-t1-YgP"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="11" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="17k-Ny-2mS">
+                                                    <rect key="frame" x="155" y="11" width="105" height="105"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" image="petai.png"/>
+                                                    <connections>
+                                                        <action selector="buttonTapped:" destination="vKE-7p-M7u" eventType="touchUpInside" id="5bs-zH-KN8"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -232,7 +232,7 @@
                                                 <button opaque="NO" tag="13" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T2U-H9-qZN">
                                                     <rect key="frame" x="20" y="11" width="105" height="105"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <state key="normal" image="tempe.png"/>
+                                                    <state key="normal" image="tahu.png"/>
                                                     <connections>
                                                         <action selector="buttonTapped:" destination="vKE-7p-M7u" eventType="touchUpInside" id="Gzn-Xb-KbF"/>
                                                     </connections>
@@ -240,7 +240,7 @@
                                                 <button opaque="NO" tag="14" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J7q-Ir-tGc">
                                                     <rect key="frame" x="155" y="11" width="105" height="105"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <state key="normal" image="terong.png"/>
+                                                    <state key="normal" image="tauge.png"/>
                                                     <connections>
                                                         <action selector="buttonTapped:" destination="vKE-7p-M7u" eventType="touchUpInside" id="Y81-8J-Ro5"/>
                                                     </connections>
@@ -248,7 +248,7 @@
                                                 <button opaque="NO" tag="15" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uYF-VZ-OVp">
                                                     <rect key="frame" x="289" y="11" width="105" height="105"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <state key="normal" image="timun.png"/>
+                                                    <state key="normal" image="Telur.png"/>
                                                     <connections>
                                                         <action selector="buttonTapped:" destination="vKE-7p-M7u" eventType="touchUpInside" id="Jjy-da-4kl"/>
                                                     </connections>
@@ -266,7 +266,7 @@
                                                 <button opaque="NO" tag="16" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d5l-d9-k61">
                                                     <rect key="frame" x="20" y="11" width="105" height="105"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <state key="normal" image="Tomat.png"/>
+                                                    <state key="normal" image="tempe.png"/>
                                                     <connections>
                                                         <action selector="buttonTapped:" destination="vKE-7p-M7u" eventType="touchUpInside" id="CT9-UJ-moe"/>
                                                     </connections>
@@ -274,7 +274,7 @@
                                                 <button opaque="NO" tag="17" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bj6-5H-x39">
                                                     <rect key="frame" x="155" y="11" width="105" height="105"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <state key="normal" image="udang.png"/>
+                                                    <state key="normal" image="terong.png"/>
                                                     <connections>
                                                         <action selector="buttonTapped:" destination="vKE-7p-M7u" eventType="touchUpInside" id="b9B-IW-slC"/>
                                                     </connections>
@@ -282,9 +282,43 @@
                                                 <button opaque="NO" tag="18" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PpR-6d-O3R">
                                                     <rect key="frame" x="289" y="11" width="105" height="105"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <state key="normal" image="wortel.png"/>
+                                                    <state key="normal" image="timun.png"/>
                                                     <connections>
                                                         <action selector="buttonTapped:" destination="vKE-7p-M7u" eventType="touchUpInside" id="CAK-g3-riV"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="130" id="xN1-NR-U74">
+                                        <rect key="frame" x="0.0" y="808" width="414" height="130"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xN1-NR-U74" id="qGQ-l4-smv">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="130"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" tag="19" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sgK-sr-3DD">
+                                                    <rect key="frame" x="20" y="11" width="105" height="105"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" image="Tomat.png"/>
+                                                    <connections>
+                                                        <action selector="buttonTapped:" destination="vKE-7p-M7u" eventType="touchUpInside" id="iNK-Ig-061"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="20" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sx2-2j-DF9">
+                                                    <rect key="frame" x="155" y="11" width="105" height="105"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" image="udang.png"/>
+                                                    <connections>
+                                                        <action selector="buttonTapped:" destination="vKE-7p-M7u" eventType="touchUpInside" id="dqS-ED-WVE"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="21" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q9N-hP-ITu">
+                                                    <rect key="frame" x="289" y="11" width="105" height="105"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" image="wortel.png"/>
+                                                    <connections>
+                                                        <action selector="buttonTapped:" destination="vKE-7p-M7u" eventType="touchUpInside" id="BI4-FM-BdW"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -325,6 +359,9 @@
                         <outlet property="tag16" destination="d5l-d9-k61" id="FMO-Ky-yAM"/>
                         <outlet property="tag17" destination="bj6-5H-x39" id="7jf-a2-URz"/>
                         <outlet property="tag18" destination="PpR-6d-O3R" id="S11-6z-zEF"/>
+                        <outlet property="tag19" destination="sgK-sr-3DD" id="XB6-Zy-v5N"/>
+                        <outlet property="tag20" destination="sx2-2j-DF9" id="6gZ-9p-JUC"/>
+                        <outlet property="tag21" destination="Q9N-hP-ITu" id="2W5-v0-kP0"/>
                         <outlet property="tahu" destination="K8z-KD-cpf" id="cHS-Lg-UIf"/>
                         <outlet property="tauge" destination="pVd-zs-rbx" id="1a9-rw-LVT"/>
                         <outlet property="telur" destination="17k-Ny-2mS" id="002-QS-qlh"/>
@@ -583,9 +620,12 @@
         <image name="daging.png" width="210" height="210"/>
         <image name="ikan.png" width="210" height="210"/>
         <image name="jamur.png" width="210" height="210"/>
+        <image name="kacangpanjang.png" width="210" height="210"/>
         <image name="kentang.png" width="210" height="210"/>
+        <image name="kol.png" width="210" height="210"/>
         <image name="mie.png" width="210" height="210"/>
         <image name="nasi.png" width="210" height="210"/>
+        <image name="petai.png" width="210" height="210"/>
         <image name="sosis.png" width="210" height="210"/>
         <image name="tahu.png" width="210" height="210"/>
         <image name="tauge.png" width="210" height="210"/>

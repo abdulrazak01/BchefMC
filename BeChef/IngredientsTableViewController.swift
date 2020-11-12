@@ -55,11 +55,14 @@ class IngredientsTableViewController: UITableViewController {
     @IBOutlet weak var tag16: UIButton!
     @IBOutlet weak var tag17: UIButton!
     @IBOutlet weak var tag18: UIButton!
+    @IBOutlet weak var tag19: UIButton!
+    @IBOutlet weak var tag20: UIButton!
+    @IBOutlet weak var tag21: UIButton!
     
     
     
     // Array isinya tag             0     1      2          3
-    var ingredientsNameCollection = ["", "Ayam", "Daging", "Ikan", "Jamur", "Kangkung", "Kentang", "Mie", "Nasi", "Sosis", "Tahu", "Tauge", "Telur", "Tempe", "Terong", "Timun", "Tomat", "Udang", "Wortel"]
+    var ingredientsNameCollection = ["", "Ayam", "Daging", "Ikan", "Jamur", "Kacang Panjang" ,"Kangkung", "Kentang", "Kol", "Mie", "Nasi", "Pete" ,"Sosis", "Tahu", "Tauge", "Telur", "Tempe", "Terong", "Timun", "Tomat", "Udang", "Wortel"]
     var buttonTagsCollection: [Int] = []
     
     // variable untuk menampung hasil pilihan igredients
@@ -87,6 +90,9 @@ class IngredientsTableViewController: UITableViewController {
         tag16.layer.cornerRadius = 10.0
         tag17.layer.cornerRadius = 10.0
         tag18.layer.cornerRadius = 10.0
+        tag19.layer.cornerRadius = 10.0
+        tag20.layer.cornerRadius = 10.0
+        tag21.layer.cornerRadius = 10.0
     }
     
     
