@@ -12,6 +12,9 @@
 		3D5EE23625525B7100227372 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D5EE23525525B7100227372 /* CloudKit.framework */; };
 		3D5EE23C2556B70C00227372 /* DetailReceiptVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5EE23B2556B70C00227372 /* DetailReceiptVC.swift */; };
 		4065A45425511AD700D36A14 /* IngredientsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4065A45325511AD700D36A14 /* IngredientsTableViewController.swift */; };
+		406EF293255CE878000A0A48 /* tempe.png in Resources */ = {isa = PBXBuildFile; fileRef = 406EF292255CE878000A0A48 /* tempe.png */; };
+		406EF296255CE888000A0A48 /* timun.png in Resources */ = {isa = PBXBuildFile; fileRef = 406EF295255CE888000A0A48 /* timun.png */; };
+		406EF2A1255CEC0D000A0A48 /* Kangkung.png in Resources */ = {isa = PBXBuildFile; fileRef = 406EF2A0255CEC0D000A0A48 /* Kangkung.png */; };
 		40DB5F15254FD5D6009BAB81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB5F14254FD5D6009BAB81 /* AppDelegate.swift */; };
 		40DB5F17254FD5D6009BAB81 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB5F16254FD5D6009BAB81 /* SceneDelegate.swift */; };
 		40DB5F19254FD5D6009BAB81 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB5F18254FD5D6009BAB81 /* ViewController.swift */; };
@@ -59,6 +62,9 @@
 		3D5EE23525525B7100227372 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		3D5EE23B2556B70C00227372 /* DetailReceiptVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailReceiptVC.swift; sourceTree = "<group>"; };
 		4065A45325511AD700D36A14 /* IngredientsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsTableViewController.swift; sourceTree = "<group>"; };
+		406EF292255CE878000A0A48 /* tempe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tempe.png; path = Asset/tempe.png; sourceTree = SOURCE_ROOT; };
+		406EF295255CE888000A0A48 /* timun.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = timun.png; path = Asset/timun.png; sourceTree = SOURCE_ROOT; };
+		406EF2A0255CEC0D000A0A48 /* Kangkung.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Kangkung.png; path = Asset/Kangkung.png; sourceTree = SOURCE_ROOT; };
 		40DB5F11254FD5D6009BAB81 /* BeChef.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeChef.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40DB5F14254FD5D6009BAB81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		40DB5F16254FD5D6009BAB81 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -171,6 +177,7 @@
 				40DF32B7255BAE17002EEE93 /* ikan.png */,
 				40DF32BF255BAE17002EEE93 /* jagung.png */,
 				40DF32B2255BAE17002EEE93 /* jamur.png */,
+				406EF2A0255CEC0D000A0A48 /* Kangkung.png */,
 				40DF32AE255BAE16002EEE93 /* Keju.png */,
 				40DF32BC255BAE17002EEE93 /* kembangkol.png */,
 				40DF32B4255BAE17002EEE93 /* kentang.png */,
@@ -183,9 +190,11 @@
 				40DF32BD255BAE17002EEE93 /* tahu.png */,
 				40DF32AC255BAE16002EEE93 /* tauge.png */,
 				40DF32B1255BAE17002EEE93 /* Telur.png */,
+				406EF292255CE878000A0A48 /* tempe.png */,
 				40DF32D9255BB087002EEE93 /* tepung.png */,
 				40DF32AA255BAE16002EEE93 /* terasi.png */,
 				40DF32BE255BAE17002EEE93 /* terong.png */,
+				406EF295255CE888000A0A48 /* timun.png */,
 				40DF32A8255BAE16002EEE93 /* Tomat.png */,
 				40DF32AD255BAE16002EEE93 /* udang.png */,
 				40DF32A9255BAE16002EEE93 /* wortel.png */,
@@ -258,7 +267,9 @@
 				40DF32C5255BAE17002EEE93 /* udang.png in Resources */,
 				40DF32CC255BAE17002EEE93 /* kentang.png in Resources */,
 				40DF32DD255BB087002EEE93 /* mie.png in Resources */,
+				406EF293255CE878000A0A48 /* tempe.png in Resources */,
 				40DF32C9255BAE17002EEE93 /* Telur.png in Resources */,
+				406EF2A1255CEC0D000A0A48 /* Kangkung.png in Resources */,
 				40DF32CB255BAE17002EEE93 /* cumicumi.png in Resources */,
 				40DF32C0255BAE17002EEE93 /* Tomat.png in Resources */,
 				40DF32C4255BAE17002EEE93 /* tauge.png in Resources */,
@@ -270,6 +281,7 @@
 				40DF32DE255BB087002EEE93 /* spaghetti.png in Resources */,
 				40DF32C2255BAE17002EEE93 /* terasi.png in Resources */,
 				40DF32C6255BAE17002EEE93 /* Keju.png in Resources */,
+				406EF296255CE888000A0A48 /* timun.png in Resources */,
 				40DF32D5255BAE17002EEE93 /* tahu.png in Resources */,
 				40DF32D7255BAE17002EEE93 /* jagung.png in Resources */,
 				40DF32DC255BB087002EEE93 /* tepung.png in Resources */,
