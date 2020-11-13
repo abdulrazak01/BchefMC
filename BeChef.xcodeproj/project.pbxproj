@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D68C1AA255E5F41006D47D5 /* OnBoarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D68C1A9255E5F41006D47D5 /* OnBoarding.storyboard */; };
 		3D5EE2262551FA2000227372 /* ReceiptVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5EE2252551FA2000227372 /* ReceiptVC.swift */; };
 		3D5EE22E2551FE5900227372 /* CustomTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5EE22D2551FE5900227372 /* CustomTVC.swift */; };
 		3D5EE23625525B7100227372 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D5EE23525525B7100227372 /* CloudKit.framework */; };
@@ -58,6 +59,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D68C1A9255E5F41006D47D5 /* OnBoarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnBoarding.storyboard; sourceTree = "<group>"; };
 		3D5EE2252551FA2000227372 /* ReceiptVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptVC.swift; sourceTree = "<group>"; };
 		3D5EE22D2551FE5900227372 /* CustomTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTVC.swift; sourceTree = "<group>"; };
 		3D5EE23225525B6600227372 /* BeChef.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BeChef.entitlements; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 				3D5EE22D2551FE5900227372 /* CustomTVC.swift */,
 				3D5EE23B2556B70C00227372 /* DetailReceiptVC.swift */,
 				40DB5F1A254FD5D6009BAB81 /* Main.storyboard */,
+				0D68C1A9255E5F41006D47D5 /* OnBoarding.storyboard */,
 				40DB5F20254FD5D8009BAB81 /* Assets.xcassets */,
 				40DB5F22254FD5D8009BAB81 /* LaunchScreen.storyboard */,
 				40DB5F25254FD5D8009BAB81 /* Info.plist */,
@@ -308,6 +311,7 @@
 				406EF2A7255D03D2000A0A48 /* kacangpanjang.png in Resources */,
 				40DB5F1C254FD5D6009BAB81 /* Main.storyboard in Resources */,
 				40DF32C3255BAE17002EEE93 /* bawangputih.png in Resources */,
+				0D68C1AA255E5F41006D47D5 /* OnBoarding.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -483,7 +487,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.AgusRiady.BeChef;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -503,7 +507,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.AgusRiady.BeChef;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

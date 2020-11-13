@@ -16,6 +16,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BgScreen" translatesAutoresizingMaskIntoConstraints="NO" id="u30-PC-B9R">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lsE-vi-DaG">
                                 <rect key="frame" x="66" y="309" width="282" height="275"/>
                                 <constraints>
@@ -66,13 +69,17 @@
                             <constraint firstItem="lsE-vi-DaG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="66" id="7CG-DO-toc"/>
                             <constraint firstItem="yqE-ay-DKb" firstAttribute="centerX" secondItem="k0B-NV-qvn" secondAttribute="centerX" id="8B8-zY-lgW"/>
                             <constraint firstItem="k0B-NV-qvn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="93" id="Czs-Mh-ZKj"/>
+                            <constraint firstItem="u30-PC-B9R" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="E2l-Xb-Exy"/>
                             <constraint firstItem="vkV-od-ChQ" firstAttribute="top" secondItem="k0B-NV-qvn" secondAttribute="bottom" constant="8" symbolic="YES" id="Ebh-td-WYO"/>
+                            <constraint firstItem="u30-PC-B9R" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Iur-M0-sZY"/>
                             <constraint firstItem="lsE-vi-DaG" firstAttribute="top" secondItem="yqE-ay-DKb" secondAttribute="bottom" constant="98.5" id="Lkd-R3-R7U"/>
                             <constraint firstItem="lsE-vi-DaG" firstAttribute="centerX" secondItem="vkV-od-ChQ" secondAttribute="centerX" id="Lve-eG-43G"/>
+                            <constraint firstAttribute="bottom" secondItem="u30-PC-B9R" secondAttribute="bottom" id="POR-NP-nIA"/>
                             <constraint firstItem="vkV-od-ChQ" firstAttribute="centerX" secondItem="zIH-aH-lK7" secondAttribute="centerX" id="Usy-LO-RKD"/>
                             <constraint firstItem="zIH-aH-lK7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="ZlB-na-PBi"/>
                             <constraint firstItem="yqE-ay-DKb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bWL-hx-nml"/>
                             <constraint firstItem="vkV-od-ChQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="123" id="cGb-P3-GVJ"/>
+                            <constraint firstItem="u30-PC-B9R" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="lGe-qX-8o7"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zIH-aH-lK7" secondAttribute="bottom" constant="62" id="qYG-jN-Rfb"/>
                             <constraint firstItem="yqE-ay-DKb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="44" id="swc-B3-vHj"/>
                             <constraint firstItem="k0B-NV-qvn" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="382" id="yTn-LJ-B4g"/>
@@ -720,6 +727,7 @@
     </scenes>
     <resources>
         <image name="46-465620_under-construction-icon-png-transparent-png" width="860" height="454"/>
+        <image name="BgScreen" width="750" height="1624"/>
         <image name="Kangkung.png" width="210" height="210"/>
         <image name="Telur.png" width="210" height="210"/>
         <image name="Tomat.png" width="210" height="210"/>
