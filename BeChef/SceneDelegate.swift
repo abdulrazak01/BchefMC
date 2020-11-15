@@ -23,7 +23,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         }
         else
         {
-            vc = launchStoryboard.instantiateViewController(identifier: "OnBoarding")
+            vc = launchStoryboard.instantiateViewController(identifier: "OnBoardingTest")
         }
         UserDefaults.standard.set(true, forKey: "hasLaunched")
         self.window?.rootViewController = vc

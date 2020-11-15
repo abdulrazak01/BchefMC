@@ -13,10 +13,22 @@ class ViewController: UIViewController, IngredientsDelegate {
     
     @IBOutlet weak var ingredientsLabel: UILabel!
     @IBOutlet weak var searchButton: UIButton!
+    @IBOutlet weak var imgBack: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        view.backgroundColor = .systemBackground
+        
+        switch traitCollection.userInterfaceStyle {
+        case .dark:
+            imgBack.image = UIImage (named: "BgScreenDark")
+        case .light:
+            imgBack.image = UIImage (named: "BgScreen")
+        default:
+            print("Default")
+        }
+        
         searchButton.isEnabled = false
         searchButton.backgroundColor = .gray
         searchButton.layer.cornerRadius = 10.0
