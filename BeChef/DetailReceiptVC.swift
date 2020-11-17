@@ -26,6 +26,11 @@ class DetailReceiptVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        if #available(iOS 13.0, *) {
+                // Always adopt a light interface style.
+                overrideUserInterfaceStyle = .light
+            }
+        
         lblTitleSea.text = "Seasoning"
         lblTitleStep.text = "Instruction"
         

@@ -18,7 +18,11 @@ class ViewController: UIViewController, IngredientsDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        view.backgroundColor = .systemBackground
+//        view.backgroundColor = .systemBackground
+        if #available(iOS 13.0, *) {
+                // Always adopt a light interface style.
+                overrideUserInterfaceStyle = .light
+            }
         
         switch traitCollection.userInterfaceStyle {
         case .dark:

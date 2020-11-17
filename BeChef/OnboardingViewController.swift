@@ -15,8 +15,11 @@ class OnboardingViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        view.backgroundColor = .systemBackground
+        if #available(iOS 13.0, *) {
+                // Always adopt a light interface style.
+                overrideUserInterfaceStyle = .light
+            }
+//        view.backgroundColor = .systemBackground
         
         switch traitCollection.userInterfaceStyle {
         case .dark:

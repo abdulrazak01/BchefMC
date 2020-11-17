@@ -93,6 +93,11 @@ class IngredientsTableViewController: UITableViewController {
         tag19.layer.cornerRadius = 10.0
         tag20.layer.cornerRadius = 10.0
         tag21.layer.cornerRadius = 10.0
+   
+        if #available(iOS 13.0, *) {
+                // Always adopt a light interface style.
+                overrideUserInterfaceStyle = .light
+            }
     }
     
     

@@ -36,6 +36,13 @@ class ReceiptVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
       //  searchBar.delegate = self
+        
+        if #available(iOS 13.0, *) {
+                // Always adopt a light interface style.
+                overrideUserInterfaceStyle = .light
+            }
+        
+        
         let refreshcontrol = UIRefreshControl()
         refreshcontrol.attributedTitle = NSAttributedString(string: "Pull To Refresh")
         refreshcontrol.addTarget(self, action: #selector(querydatabase), for: .valueChanged)
