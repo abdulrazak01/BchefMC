@@ -16,6 +16,7 @@ struct receiptmodel {
     var images: String
     var description: String
 }
+
 class ReceiptVC: UIViewController {
 
     @IBOutlet weak var tblView: UITableView!
@@ -53,26 +54,12 @@ class ReceiptVC: UIViewController {
         
         print("ini diluar \(finalbahan)")
         // Do any additional setup after loading the view.
+        configureNavigationBar()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let vc = segue.destination as! DetailReceiptVC
-        
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-    
-    
-    
-    
 
     @objc func querydatabase() {
         let query = CKQuery(recordType: "bechef",predicate: NSPredicate(value: true))
@@ -88,8 +75,50 @@ class ReceiptVC: UIViewController {
             }
         }
     }
-
- 
+    
+    // MARK: - Added by Bayu
+    
+    private func configureNavigationBar() {
+        let rightBarButton = UIBarButtonItem(image: UIImage(systemName: "magnifyingglass"), style: .plain, target: self, action: #selector(searchBarButtonPressed))
+        self.navigationItem.rightBarButtonItem = rightBarButton
+    }
+    
+    @objc func searchBarButtonPressed() {
+        print("This is the fetched records")
+        convertFetchedRecordToDictionary { results in
+            switch results {
+            case .success(let foods):
+                print(foods)
+            case .failure(let error):
+                print(error)
+            }
+        }
+    }
+    
+    private func convertFetchedRecordToDictionary(_ completion: @escaping (Result<[[String: Any]], Error>) -> Void) {
+        let predicate = NSPredicate(value: true)
+        let query = CKQuery(recordType: "bechef", predicate: predicate)
+        database.perform(query, inZoneWith: nil) { (records, error) in
+            if let error = error {
+                DispatchQueue.main.async {
+                    completion(.failure(error))
+                }
+               return
+            }
+            
+            guard let record = records else {
+                DispatchQueue.main.async {
+                    let error = NSError(domain: "com.AgusRiady.BeChef", code: 001, userInfo: [NSLocalizedDescriptionKey: "Failed fetching data"])
+                    completion(.failure(error))
+                }
+                return
+            }
+            
+            let foods = record.map { $0.asDictionary() } as! [Dictionary<String, Any>]
+            completion(.success(foods))
+          
+        }
+    }
 }
 
 extension ReceiptVC: UITableViewDataSource,UITableViewDelegate{
@@ -180,3 +209,31 @@ extension ReceiptVC: UITableViewDataSource,UITableViewDelegate{
     }
    
 } */
+
+extension CKRecord {
+    func asDictionary() -> NSDictionary {
+        let dictionary = NSMutableDictionary()
+        for key in self.allKeys() {
+            if let value = self.object(forKey: key) {
+                var path: [String] = key.components(separatedBy: "__")
+                if path.count == 1 {
+                    dictionary.setObject(value, forKey: key as NSCopying)
+                } else {
+                    var tempDict = dictionary
+                    var tempKey = key
+                    let lastKey = path[path.count - 1]
+                    path.removeLast()
+                    for item in path {
+                        tempKey = item
+                        if tempDict[tempKey] == nil {
+                            tempDict.setObject(NSMutableDictionary(), forKey: tempKey as NSCopying)
+                        }
+                        tempDict = (tempDict[tempKey] as? NSMutableDictionary) ?? NSMutableDictionary()
+                    }
+                    tempDict.setObject(value, forKey: lastKey as NSCopying)
+                }
+            }
+        }
+        return dictionary
+    }
+}
