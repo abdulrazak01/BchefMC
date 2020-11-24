@@ -16,6 +16,7 @@ struct receiptmodel {
     var images: String
     var description: String
 }
+
 class ReceiptVC: UIViewController {
 
     @IBOutlet weak var tblView: UITableView!
@@ -69,9 +70,6 @@ class ReceiptVC: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    
-    
-    
     
 
     @objc func querydatabase() {
