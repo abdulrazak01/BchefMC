@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0D68C1AA255E5F41006D47D5 /* OnBoarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D68C1A9255E5F41006D47D5 /* OnBoarding.storyboard */; };
+		3D258B80256D5F57007EBFC3 /* parseJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D258B7F256D5F57007EBFC3 /* parseJson.swift */; };
 		3D5EE2262551FA2000227372 /* ReceiptVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5EE2252551FA2000227372 /* ReceiptVC.swift */; };
 		3D5EE22E2551FE5900227372 /* CustomTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5EE22D2551FE5900227372 /* CustomTVC.swift */; };
 		3D5EE23625525B7100227372 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D5EE23525525B7100227372 /* CloudKit.framework */; };
@@ -62,6 +63,7 @@
 
 /* Begin PBXFileReference section */
 		0D68C1A9255E5F41006D47D5 /* OnBoarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnBoarding.storyboard; sourceTree = "<group>"; };
+		3D258B7F256D5F57007EBFC3 /* parseJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = parseJson.swift; sourceTree = "<group>"; };
 		3D5EE2252551FA2000227372 /* ReceiptVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptVC.swift; sourceTree = "<group>"; };
 		3D5EE22D2551FE5900227372 /* CustomTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTVC.swift; sourceTree = "<group>"; };
 		3D5EE23225525B6600227372 /* BeChef.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BeChef.entitlements; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 				4065A45325511AD700D36A14 /* IngredientsTableViewController.swift */,
 				3D5EE2252551FA2000227372 /* ReceiptVC.swift */,
 				3D5EE22D2551FE5900227372 /* CustomTVC.swift */,
+				3D258B7F256D5F57007EBFC3 /* parseJson.swift */,
 				3D5EE23B2556B70C00227372 /* DetailReceiptVC.swift */,
 				D5B82F2A256BCB1200802B0D /* ScrollStepVC.swift */,
 				40DB5F1A254FD5D6009BAB81 /* Main.storyboard */,
@@ -329,6 +332,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D5EE23C2556B70C00227372 /* DetailReceiptVC.swift in Sources */,
+				3D258B80256D5F57007EBFC3 /* parseJson.swift in Sources */,
 				40DB5F1F254FD5D6009BAB81 /* BeChef.xcdatamodeld in Sources */,
 				3D5EE2262551FA2000227372 /* ReceiptVC.swift in Sources */,
 				40DB5F19254FD5D6009BAB81 /* ViewController.swift in Sources */,
