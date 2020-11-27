@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="84d-t5-Iad">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="84d-t5-Iad">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,7 +12,6 @@
         <!--View Controller-->
         <scene sceneID="aSu-J1-FeZ">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="YEA-CW-adS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="YB0-L7-gBQ" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hhn-6x-HIh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -52,6 +52,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YEA-CW-adS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1049.2753623188407" y="22.767857142857142"/>
         </scene>
@@ -198,7 +199,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Csm-4X-eBp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="400" y="198"/>
+            <point key="canvasLocation" x="417" y="23"/>
         </scene>
         <!--Onboarding View Controller-->
         <scene sceneID="wF6-z7-iIT">
@@ -208,122 +209,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BgScreen" translatesAutoresizingMaskIntoConstraints="NO" id="MXn-UV-9DT">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ovh-Zi-P2p">
-                                <rect key="frame" x="20" y="403" width="374" height="95"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Resep Mudah dan Enak" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7dV-aq-Vzv">
-                                        <rect key="frame" x="115" y="8" width="199" height="22"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="onboarding2" translatesAutoresizingMaskIntoConstraints="NO" id="SAc-CX-DMw">
-                                        <rect key="frame" x="29" y="8" width="56" height="60"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dapatkan rekomendasi resep yang mudah untuk kamu buat" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f21-1H-Q8P">
-                                        <rect key="frame" x="115" y="26" width="246" height="54"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dk9-uI-KKv">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" red="0.047058823529411764" green="0.066666666666666666" blue="0.2196078431372549" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="488-cB-1h1">
-                                <rect key="frame" x="67" y="780" width="280" height="44"/>
-                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="utF-aR-524"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                <state key="normal" title="Mulai Memasak">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="IUC-Jj-fKm" kind="presentation" animates="NO" modalPresentationStyle="fullScreen" id="j8G-dz-aS9"/>
-                                </connections>
-                            </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uJb-cm-h6Z">
-                                <rect key="frame" x="20" y="289" width="374" height="90"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dengan Bahan Seadanya" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2pT-oF-NoA">
-                                        <rect key="frame" x="115" y="8" width="213" height="21.5"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bisa masak dengan bahan terbatas yang anda miliki" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ga-CX-RAH">
-                                        <rect key="frame" x="115" y="26" width="243" height="54"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="243" id="ErU-ym-YsM"/>
-                                            <constraint firstAttribute="height" constant="54" id="y1A-CJ-v53"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="onboarding1" translatesAutoresizingMaskIntoConstraints="NO" id="6uR-tn-SUL">
-                                        <rect key="frame" x="22" y="8" width="66" height="59"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="66" id="1aN-9M-oRV"/>
-                                            <constraint firstAttribute="height" constant="59" id="Imq-3c-LNx"/>
-                                        </constraints>
-                                    </imageView>
-                                </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="6uR-tn-SUL" secondAttribute="bottom" constant="23" id="3PU-6B-E5D"/>
-                                    <constraint firstAttribute="trailing" secondItem="2pT-oF-NoA" secondAttribute="trailing" constant="46" id="KdK-KL-hJP"/>
-                                    <constraint firstAttribute="trailing" secondItem="5Ga-CX-RAH" secondAttribute="trailing" constant="16" id="Nci-fd-ya0"/>
-                                    <constraint firstItem="2pT-oF-NoA" firstAttribute="leading" secondItem="6uR-tn-SUL" secondAttribute="trailing" constant="27" id="UFG-Mv-KEl"/>
-                                    <constraint firstItem="5Ga-CX-RAH" firstAttribute="leading" secondItem="6uR-tn-SUL" secondAttribute="trailing" constant="27" id="YoS-Oj-4Pt"/>
-                                    <constraint firstAttribute="bottom" secondItem="5Ga-CX-RAH" secondAttribute="bottom" constant="10" id="dNl-YS-pJT"/>
-                                    <constraint firstItem="2pT-oF-NoA" firstAttribute="leading" secondItem="6uR-tn-SUL" secondAttribute="trailing" constant="27" id="evc-g3-MSc"/>
-                                    <constraint firstItem="2pT-oF-NoA" firstAttribute="top" secondItem="uJb-cm-h6Z" secondAttribute="top" constant="8" id="jJG-UD-GPu"/>
-                                    <constraint firstItem="6uR-tn-SUL" firstAttribute="top" secondItem="uJb-cm-h6Z" secondAttribute="top" constant="8" id="lgd-tC-4K4"/>
-                                    <constraint firstItem="6uR-tn-SUL" firstAttribute="leading" secondItem="uJb-cm-h6Z" secondAttribute="leading" constant="22" id="o35-CY-QGD"/>
-                                </constraints>
-                            </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selamat Datang" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="85f-3h-iTw">
-                                <rect key="frame" x="20" y="164" width="374" height="48"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="40"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qhI-Qu-xW9"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.047058823529411764" green="0.066666666666666666" blue="0.2196078431372549" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="uJb-cm-h6Z" firstAttribute="leading" secondItem="qhI-Qu-xW9" secondAttribute="leading" constant="20" id="0Ab-s7-Yr6"/>
-                            <constraint firstItem="qhI-Qu-xW9" firstAttribute="trailing" secondItem="85f-3h-iTw" secondAttribute="trailing" constant="20" id="795-DP-IWa"/>
-                            <constraint firstItem="488-cB-1h1" firstAttribute="leading" secondItem="qhI-Qu-xW9" secondAttribute="leading" constant="67" id="82X-HM-da8"/>
-                            <constraint firstItem="qhI-Qu-xW9" firstAttribute="bottom" secondItem="488-cB-1h1" secondAttribute="bottom" constant="38" id="Be1-YR-tWV"/>
-                            <constraint firstItem="qhI-Qu-xW9" firstAttribute="trailing" secondItem="ovh-Zi-P2p" secondAttribute="trailing" constant="20" id="BlV-kn-dIR"/>
-                            <constraint firstItem="85f-3h-iTw" firstAttribute="leading" secondItem="qhI-Qu-xW9" secondAttribute="leading" constant="20" id="LaY-yw-zZD"/>
-                            <constraint firstItem="488-cB-1h1" firstAttribute="top" secondItem="ovh-Zi-P2p" secondAttribute="bottom" constant="282" id="RNp-rA-b5h"/>
-                            <constraint firstItem="ovh-Zi-P2p" firstAttribute="top" secondItem="uJb-cm-h6Z" secondAttribute="bottom" constant="24" id="geg-Ql-jET"/>
-                            <constraint firstItem="qhI-Qu-xW9" firstAttribute="trailing" secondItem="uJb-cm-h6Z" secondAttribute="trailing" constant="20" id="jiP-k7-Gsh"/>
-                            <constraint firstItem="uJb-cm-h6Z" firstAttribute="top" secondItem="85f-3h-iTw" secondAttribute="bottom" constant="77" id="mRP-S6-hd7"/>
-                            <constraint firstItem="qhI-Qu-xW9" firstAttribute="trailing" secondItem="488-cB-1h1" secondAttribute="trailing" constant="67" id="mZt-zF-cLM"/>
-                            <constraint firstItem="ovh-Zi-P2p" firstAttribute="top" secondItem="uJb-cm-h6Z" secondAttribute="bottom" constant="24" id="rTa-ac-hCN"/>
-                            <constraint firstItem="85f-3h-iTw" firstAttribute="top" secondItem="qhI-Qu-xW9" secondAttribute="top" constant="120" id="sOH-9Z-H9o"/>
-                            <constraint firstItem="ovh-Zi-P2p" firstAttribute="leading" secondItem="qhI-Qu-xW9" secondAttribute="leading" constant="20" id="vwE-Eb-C4g"/>
+                            <constraint firstItem="dk9-uI-KKv" firstAttribute="top" secondItem="qhI-Qu-xW9" secondAttribute="top" id="9Vl-40-dFM"/>
+                            <constraint firstItem="qhI-Qu-xW9" firstAttribute="bottom" secondItem="dk9-uI-KKv" secondAttribute="bottom" id="NxT-CT-Z5h"/>
+                            <constraint firstItem="dk9-uI-KKv" firstAttribute="leading" secondItem="qhI-Qu-xW9" secondAttribute="leading" id="k7x-Pk-BrO"/>
+                            <constraint firstItem="qhI-Qu-xW9" firstAttribute="trailing" secondItem="dk9-uI-KKv" secondAttribute="trailing" id="s9b-uE-X3q"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="imgBG" destination="MXn-UV-9DT" id="7bE-84-n3b"/>
+                        <outlet property="holderView" destination="dk9-uI-KKv" id="6IO-Ks-VpB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Zw-hp-o9b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -336,13 +237,13 @@
                 <viewControllerPlaceholder storyboardName="Main" id="IUC-Jj-fKm" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4IJ-eM-JFA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="401" y="713"/>
+            <point key="canvasLocation" x="563" y="696"/>
         </scene>
     </scenes>
     <resources>
         <image name="BgScreen" width="750" height="1624"/>
-        <image name="onboarding1" width="96" height="96"/>
-        <image name="onboarding2" width="112" height="112"/>
+        <image name="onboarding1" width="2917" height="1237"/>
+        <image name="onboarding2" width="1680" height="1645"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
