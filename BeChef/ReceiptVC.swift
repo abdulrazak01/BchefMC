@@ -153,15 +153,13 @@ extension ReceiptVC: UITableViewDataSource,UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
        
-        
-        
-       // let imageasset: CKAsset = searchArr[indexPath.row].value(forKey: "images") as! CKAsset
-        let vc = storyboard?.instantiateViewController(withIdentifier: "DetailViewController") as? DetailReceiptVC
+       let imageasset: CKAsset = searchArr[indexPath.row].value(forKey: "images") as! CKAsset
+        let vc = storyboard?.instantiateViewController(withIdentifier: "RecipeStepVC") as? RecipeStepVC
         self.navigationController?.pushViewController(vc!, animated: true)
-        //vc?.tittle = searchArr[indexPath.row].value(forKey: "title") as! String
-        //vc?.bumbu = searchArr[indexPath.row].value(forKey: "seasoning") as! String
+        vc?.tittle = searchArr[indexPath.row].value(forKey: "title") as! String
+        vc?.bumbu = searchArr[indexPath.row].value(forKey: "seasoning") as! String
         vc?.step = searchArr[indexPath.row].value(forKey: "instruction") as! String
-        //vc?.image = UIImage(contentsOfFile: imageasset.fileURL!.path)!
+        vc?.image = UIImage(contentsOfFile: imageasset.fileURL!.path)!
         
         
     }

@@ -10,7 +10,7 @@ import Foundation
 
 
 
-class DetailReceiptVC: UIViewController,UIScrollViewDelegate{
+class DetailReceiptVC: UIViewController, UIScrollViewDelegate{
    
     
 
@@ -43,19 +43,8 @@ class DetailReceiptVC: UIViewController,UIScrollViewDelegate{
                 // Always adopt a light interface style.
                 overrideUserInterfaceStyle = .light
             }
-        
-       /* lblTitleSea.text = "Seasoning"
-        lblTitleStep.text = "Instruction"
-        
-        lbltitle.text = tittle
-        lblbumbu.text = bumbu
-        lblstep.text = step
-        detailimg.image = image */
         readLangkah()
     
-      //  lblbumbu.isEditable = false
-       // lblstep.isEditable = false
-        // Do any additional setup after loading the view.
     }
     
     func readLangkah (){
@@ -72,15 +61,25 @@ class DetailReceiptVC: UIViewController,UIScrollViewDelegate{
             frame.size = scrollView.frame.size
             print(dataJson[index].gambar!)
             let urlGambar = URL(string: dataJson[index].gambar!)
-            let imgView = UIImageView(frame: frame)
-            imgView.load(url: urlGambar! )
-            let datainstruksi = dataJson[index].instruksi!
-            lblInstruction.text = datainstruksi
-            self.scrollView.addSubview(imgView)
+            
+            //ImageView
+            let imgInstruksi = UIImageView(frame: frame)
+             //  imgInstruksi.contentMode = .scaleAspectFill
+            imgInstruksi.load(url: urlGambar!)
+            
+            //label
+            let lblInstruksi = UILabel(frame: frame)
+            lblInstruksi.text = dataJson[index].instruksi!
+            
+            //add to scrollview
+            self.scrollView.addSubview(imgInstruksi)
+            self.scrollView.addSubview(lblInstruksi)
             
             
             
         }
+        
+        
         scrollView.contentSize = CGSize(width: (scrollView.frame.size.width * CGFloat(dataJson.count)),height: scrollView.frame.size.height)
         scrollView.delegate = self
         
@@ -88,7 +87,7 @@ class DetailReceiptVC: UIViewController,UIScrollViewDelegate{
      }
     
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-        var pageNumber = scrollView.contentOffset.x / scrollView.frame.size.width
+        let pageNumber = scrollView.contentOffset.x / scrollView.frame.size.width
         pageController.currentPage = Int(pageNumber)
     }
 

@@ -57,7 +57,7 @@
 		40DF32DC255BB087002EEE93 /* tepung.png in Resources */ = {isa = PBXBuildFile; fileRef = 40DF32D9255BB087002EEE93 /* tepung.png */; };
 		40DF32DD255BB087002EEE93 /* mie.png in Resources */ = {isa = PBXBuildFile; fileRef = 40DF32DA255BB087002EEE93 /* mie.png */; };
 		40DF32DE255BB087002EEE93 /* spaghetti.png in Resources */ = {isa = PBXBuildFile; fileRef = 40DF32DB255BB087002EEE93 /* spaghetti.png */; };
-		D5B82F2B256BCB1200802B0D /* ScrollStepVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B82F2A256BCB1200802B0D /* ScrollStepVC.swift */; };
+		D5B82F2B256BCB1200802B0D /* RecipeStepVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B82F2A256BCB1200802B0D /* RecipeStepVC.swift */; };
 		D5F126B4255FA8D000DF7B4D /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F126B3255FA8D000DF7B4D /* OnboardingViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -115,7 +115,7 @@
 		40DF32D9255BB087002EEE93 /* tepung.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tepung.png; path = Asset/tepung.png; sourceTree = SOURCE_ROOT; };
 		40DF32DA255BB087002EEE93 /* mie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mie.png; path = Asset/mie.png; sourceTree = SOURCE_ROOT; };
 		40DF32DB255BB087002EEE93 /* spaghetti.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = spaghetti.png; path = Asset/spaghetti.png; sourceTree = SOURCE_ROOT; };
-		D5B82F2A256BCB1200802B0D /* ScrollStepVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollStepVC.swift; sourceTree = "<group>"; };
+		D5B82F2A256BCB1200802B0D /* RecipeStepVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeStepVC.swift; sourceTree = "<group>"; };
 		D5F126B3255FA8D000DF7B4D /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -168,7 +168,7 @@
 				3D5EE22D2551FE5900227372 /* CustomTVC.swift */,
 				3D258B7F256D5F57007EBFC3 /* parseJson.swift */,
 				3D5EE23B2556B70C00227372 /* DetailReceiptVC.swift */,
-				D5B82F2A256BCB1200802B0D /* ScrollStepVC.swift */,
+				D5B82F2A256BCB1200802B0D /* RecipeStepVC.swift */,
 				40DB5F1A254FD5D6009BAB81 /* Main.storyboard */,
 				0D68C1A9255E5F41006D47D5 /* OnBoarding.storyboard */,
 				D5F126B3255FA8D000DF7B4D /* OnboardingViewController.swift */,
@@ -339,7 +339,7 @@
 				40DB5F15254FD5D6009BAB81 /* AppDelegate.swift in Sources */,
 				4065A45425511AD700D36A14 /* IngredientsTableViewController.swift in Sources */,
 				40DB5F17254FD5D6009BAB81 /* SceneDelegate.swift in Sources */,
-				D5B82F2B256BCB1200802B0D /* ScrollStepVC.swift in Sources */,
+				D5B82F2B256BCB1200802B0D /* RecipeStepVC.swift in Sources */,
 				D5F126B4255FA8D000DF7B4D /* OnboardingViewController.swift in Sources */,
 				3D5EE22E2551FE5900227372 /* CustomTVC.swift in Sources */,
 			);
