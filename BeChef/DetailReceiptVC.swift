@@ -55,7 +55,6 @@ class DetailReceiptVC: UIViewController, UIScrollViewDelegate{
         self.dataJson = Json.jobs ?? []
         
         
-        
         for index in 0..<dataJson.count{
             frame.origin.x = scrollView.frame.size.width * CGFloat(index)
             frame.size = scrollView.frame.size

@@ -18,25 +18,42 @@ class RecipeStepVC: UIViewController {
     @IBOutlet weak var detailBtn: UIButton!
     
     
-    
+    var dataJson = [Jobs]()
     var image = UIImage()
     var tittle = ""
     var bumbu = ""
     var step = ""
+    var stepToText = [String]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+    
+        tampilLabel()
         
         lblTitleSea.text = "Seasoning"
         lblTitleStep.text = "Instruction"
         
         lbltitle.text = tittle
         lblbumbu.text = bumbu
-        lblstep.text = step
+        lblstep.text = stepToText.joined(separator: " \n")
         detailimg.image = image
+    }
+    
+    
+    func tampilLabel(){
+        let JsonfromCK = step.self
+        let JsonString = JsonfromCK.data(using: .utf8)!
+        let decoder = JSONDecoder()
+        let Json = try! decoder.decode(langkah.self, from: JsonString)
+        self.dataJson = Json.jobs 
         
-      //  lblbumbu.isEditable = false
-       // lblstep.isEditable = false
-        // Do any additional setup after loading the view.
+        for i in 0..<dataJson.count {
+            let noStep = dataJson[i].step!
+            let instruksi = dataJson[i].instruksi!
+            let joinText = "\(noStep). " + instruksi
+            stepToText.append(joinText)
+            
+        }
     }
     
     @IBAction func didTapBtn(_ sender: Any) {
