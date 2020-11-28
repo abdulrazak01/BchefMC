@@ -11,7 +11,13 @@ class OnboardingViewController: UIViewController, UIScrollViewDelegate {
     
     @IBOutlet var holderView: UIView!
     let scrollview = UIScrollView()
-    let pageControl1 = UIPageControl()
+    
+    private let pageControl: UIPageControl = {
+        let pageControl = UIPageControl()
+        pageControl.numberOfPages = 3
+        return pageControl
+    }()
+  
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +26,7 @@ class OnboardingViewController: UIViewController, UIScrollViewDelegate {
         }
         
         scrollview.delegate = self
+        pageControl.currentPage = 0
       configure()
             }
     
@@ -27,6 +34,10 @@ class OnboardingViewController: UIViewController, UIScrollViewDelegate {
         super.viewDidLayoutSubviews()
         configure()
         }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        pageControl.currentPage = Int(scrollview.contentOffset.x / CGFloat(414))
+    }
         
     
         
@@ -38,7 +49,7 @@ class OnboardingViewController: UIViewController, UIScrollViewDelegate {
             let titles = ["Ketika lapar datang menyerang", "Pilih jagoan-jagoan terbaikmu", "Lancarkan jurus-jurusnya"]
             let title = ["4 pahlawan ini siap membantumu melawan monster “Lapar”!", "Pilih dan kombinasikan jurus mereka untuk mengalahkan monster “Lapar”!", "Bersama jagoanmu, lancarkan jurusnya, dan kalahkan monster “Lapar”!"]
             
-            let pageControl = UIPageControl(frame: CGRect(x: 10, y: holderView.frame.size.height-175, width: holderView.frame.size.width-20, height: 70))
+            pageControl.frame = CGRect(x: 10, y: holderView.frame.size.height-175, width: holderView.frame.size.width-20, height: 70)
            
            
             for x in 0..<3 {
@@ -79,27 +90,17 @@ class OnboardingViewController: UIViewController, UIScrollViewDelegate {
                 button.tag = x+1
                 button.isHidden = true
                 
-                pageControl.numberOfPages = 3
+                pageControl.numberOfPages = title.count
                 if x == 2 {
                     button.setTitle("Mulai", for: .normal)
                     button.isHidden = false
-                    pageControl.currentPage = 3
-                } else if x == 1 {
-                    pageControl.currentPage = 2
-                    
-                    
-                } else {
-                    pageControl.currentPage = 1
-                    
                 }
-                
-                
+                    
+                pageControl.addTarget(self, action: #selector(pageControlDidChange(_:)), for: .valueChanged)
                 
                 
                 button.addTarget(self, action: #selector(didTapButton(_:)), for: .touchUpInside)
                 
-                
-               
             
                 holderView.addSubview(pageControl)
                 pageView.addSubview(button)
@@ -121,8 +122,14 @@ class OnboardingViewController: UIViewController, UIScrollViewDelegate {
             
             scrollview.contentSize = CGSize(width: holderView.frame.size.width*3, height: 0)
             scrollview.isPagingEnabled = true
+            
         
             
+    }
+    
+    @objc func pageControlDidChange(_ sender: UIPageControl){
+        let current = sender.currentPage
+        scrollview.setContentOffset(CGPoint(x: holderView.frame.size.width * CGFloat(current), y: 0), animated: true)
     }
     
     
@@ -146,6 +153,7 @@ class OnboardingViewController: UIViewController, UIScrollViewDelegate {
             return
         }
         scrollview.setContentOffset(CGPoint(x: holderView.frame.size.width * CGFloat(button.tag), y: 0), animated: true)
+        
     }
 
     /*
@@ -157,6 +165,9 @@ class OnboardingViewController: UIViewController, UIScrollViewDelegate {
         // Pass the selected object to the new view controller.
     }
     */
-
 }
+//
+//extension ViewController: UIScrollViewDelegate{
+//    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+////        pageControl.currentpage = Int(floorf(Float(scrollView.contentOffset.x) / Float(scrollView.frame.size.widht)))
 
