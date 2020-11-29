@@ -38,7 +38,7 @@ let ingredientsYellow = UIColor(hexString: "#FED439")
 class ViewController: UIViewController {
 
     //var selectedIngredients = [String]()
-    
+    var checked = false
     @IBOutlet weak var ingredientsLabel: UILabel!
     @IBOutlet weak var searchButton: UIButton!
     
@@ -77,6 +77,46 @@ class ViewController: UIViewController {
         //performSegue(withIdentifier: "segueGoTo", sender: self)
     }
     
+    @IBAction func nasi(_ sender: UIButton) {
+        if checked {
+            sender.setImage(UIImage(named: "NasiGG"), for: .normal)
+                
+            } else {
+                sender.setImage(UIImage(named: "Nasi Selected"), for: .normal)
+                
+            }
+    }
+    @IBAction func mie(_ sender: UIButton) {
+        if checked {
+            sender.setImage(UIImage(named: "Mie Idle"), for: .normal)
+                
+            } else {
+                sender.setImage(UIImage(named: "Mie Selected"), for: .normal)
+                
+            }
+    }
+    
+    @IBAction func telur(_ sender: UIButton) {
+        if checked {
+            sender.setImage(UIImage(named: "Telurgg"), for: .normal)
+                
+            } else {
+                sender.setImage(UIImage(named: "Telur Selected"), for: .normal)
+                
+            }
+        
+    }
+    
+    @IBAction func roti(_ sender: UIButton) {
+        if checked {
+            sender.setImage(UIImage(named: "Roti Idle"), for: .normal)
+                
+            } else {
+                sender.setImage(UIImage(named: "Roti Selected"), for: .normal)
+                
+            }
+    }
+    
     // Array isinya tag             0     1      2          3
     var ingredientsNameCollection = ["", "nasi", "mie", "telur", "roti"]
     var buttonTagsCollection: [Int] = []
@@ -88,10 +128,10 @@ class ViewController: UIViewController {
         
         if let foundIndex = buttonTagsCollection.lastIndex(of: sender.tag) {
             buttonTagsCollection.remove(at: foundIndex)
-            sender.backgroundColor = .white
+           checked = true
         } else {
             buttonTagsCollection.append(sender.tag)
-            sender.backgroundColor = ingredientsYellow
+           checked = false
         }
         
         selectedIngredients = []

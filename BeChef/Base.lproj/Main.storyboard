@@ -40,9 +40,10 @@
                                     <constraint firstAttribute="height" constant="105" id="TKA-cT-S9p"/>
                                     <constraint firstAttribute="width" constant="105" id="yXN-of-vcN"/>
                                 </constraints>
-                                <state key="normal" image="Telur.png"/>
+                                <state key="normal" image="Telurgg.png"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jgp-LG-0dD"/>
+                                    <action selector="telur:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TKK-Rf-89H"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qqh-iT-PgS">
@@ -51,9 +52,10 @@
                                     <constraint firstAttribute="width" constant="105" id="6X2-33-xKv"/>
                                     <constraint firstAttribute="height" constant="105" id="TOc-lI-8Dj"/>
                                 </constraints>
-                                <state key="normal" image="mie.png"/>
+                                <state key="normal" image="Mie Idle.png"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AaZ-g1-Tfw"/>
+                                    <action selector="mie:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fj7-AB-94T"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rDi-7Q-jTV">
@@ -62,9 +64,10 @@
                                     <constraint firstAttribute="height" constant="105" id="NBq-Wh-n2v"/>
                                     <constraint firstAttribute="width" constant="105" id="m68-bd-YJk"/>
                                 </constraints>
-                                <state key="normal" image="nasi.png"/>
+                                <state key="normal" image="NasiGG.png"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="enD-mG-M5k"/>
+                                    <action selector="nasi:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ug8-e3-dBB"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b6H-yj-BpY">
@@ -72,9 +75,10 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="105" id="YFp-me-etN"/>
                                 </constraints>
-                                <state key="normal" image="daging.png"/>
+                                <state key="normal" image="Roti Idle.png"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gqg-OI-TAr"/>
+                                    <action selector="roti:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k34-8I-SYl"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pLA-af-KuL">
@@ -411,10 +415,10 @@
     </scenes>
     <resources>
         <image name="46-465620_under-construction-icon-png-transparent-png" width="860" height="454"/>
-        <image name="Telur.png" width="210" height="210"/>
-        <image name="daging.png" width="210" height="210"/>
-        <image name="mie.png" width="210" height="210"/>
-        <image name="nasi.png" width="210" height="210"/>
+        <image name="Mie Idle.png" width="900" height="900"/>
+        <image name="NasiGG.png" width="900" height="900"/>
+        <image name="Roti Idle.png" width="900" height="900"/>
+        <image name="Telurgg.png" width="900" height="900"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

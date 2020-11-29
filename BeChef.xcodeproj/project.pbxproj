@@ -13,6 +13,18 @@
 		3D5EE22E2551FE5900227372 /* CustomTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5EE22D2551FE5900227372 /* CustomTVC.swift */; };
 		3D5EE23625525B7100227372 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D5EE23525525B7100227372 /* CloudKit.framework */; };
 		3D5EE23C2556B70C00227372 /* DetailReceiptVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5EE23B2556B70C00227372 /* DetailReceiptVC.swift */; };
+		3D5EF5132573EB3600AB36E3 /* monsterForOnboarding1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D5EF5072573EB3600AB36E3 /* monsterForOnboarding1.png */; };
+		3D5EF5142573EB3600AB36E3 /* foodTeamForOnboarding2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D5EF5082573EB3600AB36E3 /* foodTeamForOnboarding2.png */; };
+		3D5EF5152573EB3600AB36E3 /* Mie Selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D5EF5092573EB3600AB36E3 /* Mie Selected.png */; };
+		3D5EF5162573EB3600AB36E3 /* Roti Idle.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D5EF50A2573EB3600AB36E3 /* Roti Idle.png */; };
+		3D5EF5172573EB3600AB36E3 /* filterBlue.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D5EF50B2573EB3600AB36E3 /* filterBlue.png */; };
+		3D5EF5182573EB3600AB36E3 /* Roti Selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D5EF50C2573EB3600AB36E3 /* Roti Selected.png */; };
+		3D5EF5192573EB3600AB36E3 /* Telur Selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D5EF50D2573EB3600AB36E3 /* Telur Selected.png */; };
+		3D5EF51A2573EB3600AB36E3 /* Mie Idle.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D5EF50E2573EB3600AB36E3 /* Mie Idle.png */; };
+		3D5EF51B2573EB3600AB36E3 /* Nasi Selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D5EF50F2573EB3600AB36E3 /* Nasi Selected.png */; };
+		3D5EF51C2573EB3600AB36E3 /* NasiGG.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D5EF5102573EB3600AB36E3 /* NasiGG.png */; };
+		3D5EF51D2573EB3600AB36E3 /* Telurgg.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D5EF5112573EB3600AB36E3 /* Telurgg.png */; };
+		3D5EF51E2573EB3600AB36E3 /* telurMasakForOnboarding3.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D5EF5122573EB3600AB36E3 /* telurMasakForOnboarding3.png */; };
 		4065A45425511AD700D36A14 /* IngredientsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4065A45325511AD700D36A14 /* IngredientsTableViewController.swift */; };
 		406EF293255CE878000A0A48 /* tempe.png in Resources */ = {isa = PBXBuildFile; fileRef = 406EF292255CE878000A0A48 /* tempe.png */; };
 		406EF296255CE888000A0A48 /* timun.png in Resources */ = {isa = PBXBuildFile; fileRef = 406EF295255CE888000A0A48 /* timun.png */; };
@@ -69,6 +81,18 @@
 		3D5EE23225525B6600227372 /* BeChef.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BeChef.entitlements; sourceTree = "<group>"; };
 		3D5EE23525525B7100227372 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		3D5EE23B2556B70C00227372 /* DetailReceiptVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailReceiptVC.swift; sourceTree = "<group>"; };
+		3D5EF5072573EB3600AB36E3 /* monsterForOnboarding1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = monsterForOnboarding1.png; path = "../../../../Downloads/newAsset-2/monsterForOnboarding1.png"; sourceTree = "<group>"; };
+		3D5EF5082573EB3600AB36E3 /* foodTeamForOnboarding2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = foodTeamForOnboarding2.png; path = "../../../../Downloads/newAsset-2/foodTeamForOnboarding2.png"; sourceTree = "<group>"; };
+		3D5EF5092573EB3600AB36E3 /* Mie Selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Mie Selected.png"; path = "../../../../Downloads/newAsset-2/Mie Selected.png"; sourceTree = "<group>"; };
+		3D5EF50A2573EB3600AB36E3 /* Roti Idle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Roti Idle.png"; path = "../../../../Downloads/newAsset-2/Roti Idle.png"; sourceTree = "<group>"; };
+		3D5EF50B2573EB3600AB36E3 /* filterBlue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = filterBlue.png; path = "../../../../Downloads/newAsset-2/filterBlue.png"; sourceTree = "<group>"; };
+		3D5EF50C2573EB3600AB36E3 /* Roti Selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Roti Selected.png"; path = "../../../../Downloads/newAsset-2/Roti Selected.png"; sourceTree = "<group>"; };
+		3D5EF50D2573EB3600AB36E3 /* Telur Selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Telur Selected.png"; path = "../../../../Downloads/newAsset-2/Telur Selected.png"; sourceTree = "<group>"; };
+		3D5EF50E2573EB3600AB36E3 /* Mie Idle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Mie Idle.png"; path = "../../../../Downloads/newAsset-2/Mie Idle.png"; sourceTree = "<group>"; };
+		3D5EF50F2573EB3600AB36E3 /* Nasi Selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Nasi Selected.png"; path = "../../../../Downloads/newAsset-2/Nasi Selected.png"; sourceTree = "<group>"; };
+		3D5EF5102573EB3600AB36E3 /* NasiGG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = NasiGG.png; path = "../../../../Downloads/newAsset-2/NasiGG.png"; sourceTree = "<group>"; };
+		3D5EF5112573EB3600AB36E3 /* Telurgg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Telurgg.png; path = "../../../../Downloads/newAsset-2/Telurgg.png"; sourceTree = "<group>"; };
+		3D5EF5122573EB3600AB36E3 /* telurMasakForOnboarding3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = telurMasakForOnboarding3.png; path = "../../../../Downloads/newAsset-2/telurMasakForOnboarding3.png"; sourceTree = "<group>"; };
 		4065A45325511AD700D36A14 /* IngredientsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsTableViewController.swift; sourceTree = "<group>"; };
 		406EF292255CE878000A0A48 /* tempe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tempe.png; path = Asset/tempe.png; sourceTree = SOURCE_ROOT; };
 		406EF295255CE888000A0A48 /* timun.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = timun.png; path = Asset/timun.png; sourceTree = SOURCE_ROOT; };
@@ -193,6 +217,18 @@
 				40DF32B7255BAE17002EEE93 /* ikan.png */,
 				40DF32BF255BAE17002EEE93 /* jagung.png */,
 				40DF32B2255BAE17002EEE93 /* jamur.png */,
+				3D5EF50B2573EB3600AB36E3 /* filterBlue.png */,
+				3D5EF5082573EB3600AB36E3 /* foodTeamForOnboarding2.png */,
+				3D5EF50E2573EB3600AB36E3 /* Mie Idle.png */,
+				3D5EF5092573EB3600AB36E3 /* Mie Selected.png */,
+				3D5EF5072573EB3600AB36E3 /* monsterForOnboarding1.png */,
+				3D5EF50F2573EB3600AB36E3 /* Nasi Selected.png */,
+				3D5EF5102573EB3600AB36E3 /* NasiGG.png */,
+				3D5EF50A2573EB3600AB36E3 /* Roti Idle.png */,
+				3D5EF50C2573EB3600AB36E3 /* Roti Selected.png */,
+				3D5EF50D2573EB3600AB36E3 /* Telur Selected.png */,
+				3D5EF5112573EB3600AB36E3 /* Telurgg.png */,
+				3D5EF5122573EB3600AB36E3 /* telurMasakForOnboarding3.png */,
 				406EF2A6255D03D2000A0A48 /* kacangpanjang.png */,
 				406EF2A0255CEC0D000A0A48 /* Kangkung.png */,
 				40DF32AE255BAE16002EEE93 /* Keju.png */,
@@ -282,6 +318,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				40DB5F39254FD61A009BAB81 /* Group.png in Resources */,
+				3D5EF51E2573EB3600AB36E3 /* telurMasakForOnboarding3.png in Resources */,
 				40DF32C5255BAE17002EEE93 /* udang.png in Resources */,
 				40DF32CC255BAE17002EEE93 /* kentang.png in Resources */,
 				40DF32DD255BB087002EEE93 /* mie.png in Resources */,
@@ -290,9 +327,11 @@
 				406EF2A1255CEC0D000A0A48 /* Kangkung.png in Resources */,
 				40DF32CB255BAE17002EEE93 /* cumicumi.png in Resources */,
 				40DF32C0255BAE17002EEE93 /* Tomat.png in Resources */,
+				3D5EF5132573EB3600AB36E3 /* monsterForOnboarding1.png in Resources */,
 				40DF32C4255BAE17002EEE93 /* tauge.png in Resources */,
 				40DF32C7255BAE17002EEE93 /* daging.png in Resources */,
 				40DB5F24254FD5D8009BAB81 /* LaunchScreen.storyboard in Resources */,
+				3D5EF5192573EB3600AB36E3 /* Telur Selected.png in Resources */,
 				40DF32CD255BAE17002EEE93 /* kol.png in Resources */,
 				406EF2A4255D02B2000A0A48 /* petai.png in Resources */,
 				40DF32C8255BAE17002EEE93 /* cabe.png in Resources */,
@@ -303,6 +342,7 @@
 				406EF296255CE888000A0A48 /* timun.png in Resources */,
 				40DF32D5255BAE17002EEE93 /* tahu.png in Resources */,
 				40DF32D7255BAE17002EEE93 /* jagung.png in Resources */,
+				3D5EF51C2573EB3600AB36E3 /* NasiGG.png in Resources */,
 				40DF32DC255BB087002EEE93 /* tepung.png in Resources */,
 				40DB5F38254FD61A009BAB81 /* Rectangle.png in Resources */,
 				40DB5F21254FD5D8009BAB81 /* Assets.xcassets in Resources */,
@@ -310,17 +350,25 @@
 				40DF32D6255BAE17002EEE93 /* terong.png in Resources */,
 				40DF32C1255BAE17002EEE93 /* wortel.png in Resources */,
 				40DB5F3F254FDA7E009BAB81 /* kotakkuning.png in Resources */,
+				3D5EF51D2573EB3600AB36E3 /* Telurgg.png in Resources */,
+				3D5EF5172573EB3600AB36E3 /* filterBlue.png in Resources */,
 				40DF32CE255BAE17002EEE93 /* bawangmerah.png in Resources */,
 				40DF32D3255BAE17002EEE93 /* sosis.png in Resources */,
 				40DB5F40254FDA7E009BAB81 /* kotakoren.png in Resources */,
+				3D5EF5152573EB3600AB36E3 /* Mie Selected.png in Resources */,
 				40DF32CA255BAE17002EEE93 /* jamur.png in Resources */,
 				40DF32D2255BAE17002EEE93 /* selada.png in Resources */,
+				3D5EF5182573EB3600AB36E3 /* Roti Selected.png in Resources */,
+				3D5EF5162573EB3600AB36E3 /* Roti Idle.png in Resources */,
+				3D5EF51A2573EB3600AB36E3 /* Mie Idle.png in Resources */,
 				40DF32D1255BAE17002EEE93 /* nasi.png in Resources */,
 				40DF32CF255BAE17002EEE93 /* ikan.png in Resources */,
 				406EF2A7255D03D2000A0A48 /* kacangpanjang.png in Resources */,
+				3D5EF5142573EB3600AB36E3 /* foodTeamForOnboarding2.png in Resources */,
 				40DB5F1C254FD5D6009BAB81 /* Main.storyboard in Resources */,
 				40DF32C3255BAE17002EEE93 /* bawangputih.png in Resources */,
 				0D68C1AA255E5F41006D47D5 /* OnBoarding.storyboard in Resources */,
+				3D5EF51B2573EB3600AB36E3 /* Nasi Selected.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
