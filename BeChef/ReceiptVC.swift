@@ -94,7 +94,7 @@ extension ReceiptVC: UITableViewDataSource,UITableViewDelegate{
     
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-            return 260
+            return 170
     }
    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
    
@@ -137,7 +137,9 @@ extension ReceiptVC: UITableViewDataSource,UITableViewDelegate{
         let items = searchArr[indexPath.row].value(forKey: "ingredient") as! String
         let imageasset: CKAsset = searchArr[indexPath.row].value(forKey: "images") as! CKAsset
         cell.img.image = UIImage(contentsOfFile: imageasset.fileURL!.path)
-        cell.img.layer.cornerRadius = 10
+        
+        cell.cardView.layer.cornerRadius = 12.0
+        
         //print("ini didalam \(finalbahan)")
         cell.lbltitle?.text = item
         cell.lbldeskripsi?.text = items
