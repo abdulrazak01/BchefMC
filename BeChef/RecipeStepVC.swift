@@ -60,6 +60,7 @@ class RecipeStepVC: UIViewController {
         let vc = storyboard?.instantiateViewController(withIdentifier: "DetailViewController") as? DetailReceiptVC
         self.navigationController?.pushViewController(vc!, animated: true)
         vc?.step = step
+        vc?.tittle = tittle
         
     }
     

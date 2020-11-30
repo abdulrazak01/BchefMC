@@ -12,30 +12,23 @@ import Foundation
 
 class DetailReceiptVC: UIViewController, UIScrollViewDelegate{
    
+    @IBOutlet weak var holderView1: UIView!
+    let scrollView = UIScrollView()
     
-
-    @IBOutlet weak var lbltitle: UILabel!
-    @IBOutlet weak var detailimg: UIImageView!
-
-    @IBOutlet weak var lblbumbu: UILabel!
-    @IBOutlet weak var lblstep: UILabel!
     
-    @IBOutlet weak var lblTitleSea: UILabel!
-    @IBOutlet weak var lblTitleStep: UILabel!
+    private let pageController: UIPageControl = {
+        let pageController = UIPageControl()
+        return pageController
+    }()
     
-    @IBOutlet weak var pageController: UIPageControl!
-    
-    @IBOutlet weak var scrollView: UIScrollView!
-    @IBOutlet weak var lblInstruction: UILabel!
-    
-   
-    
-    //var image = UIImage()
-    //var tittle = ""
-    //var bumbu = ""
+    var tittle = ""
     var step = ""
     var dataJson = [Jobs]()
-    var frame = CGRect(x: 0, y: 0, width: 0, height: 0)
+    var arrayStep = [String]()
+    var arrayImg = [String]()
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -43,44 +36,84 @@ class DetailReceiptVC: UIViewController, UIScrollViewDelegate{
                 // Always adopt a light interface style.
                 overrideUserInterfaceStyle = .light
             }
+        
+        scrollView.delegate = self
+        pageController.currentPage = 0
         readLangkah()
-    
     }
     
-    func readLangkah (){
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        readLangkah()
+    }
+    
+    func scrollViewDidScrollToTop(_ scrollView: UIScrollView) {
+        pageController.currentPage = Int(scrollView.contentOffset.x / CGFloat(414))
+    }
+    
+    private func readLangkah (){
+        scrollView.showsVerticalScrollIndicator = false
+        scrollView.showsHorizontalScrollIndicator = false
+        scrollView.frame = CGRect(x: 0, y: 0, width: holderView1.frame.size.width, height: holderView1.frame.size.height)
+        holderView1.addSubview(scrollView)
+        
+        
         let JsonfromCK = step.self
         let JsonString = JsonfromCK.data(using: .utf8)!
         let decoder = JSONDecoder()
         let Json = try! decoder.decode(langkah.self, from: JsonString)
         self.dataJson = Json.jobs ?? []
         
+        for i in 0..<dataJson.count {
+            let img = dataJson[i].gambar!
+            let instruksi = dataJson[i].instruksi!
+            arrayImg.append(img)
+            arrayStep.append(instruksi)
+        }
+        
+        pageController.frame = CGRect(x: 10, y: holderView1.frame.size.height-175, width: holderView1.frame.size.width-20, height: 70)
+
+        let label1 = UILabel(frame: CGRect(x: 20, y: 550, width: holderView1.frame.size.width-40, height: 120))
+        label1.text = tittle
         
         for index in 0..<dataJson.count{
-            frame.origin.x = scrollView.frame.size.width * CGFloat(index)
-            frame.size = scrollView.frame.size
-            print(dataJson[index].gambar!)
-            let urlGambar = URL(string: dataJson[index].gambar!)
+
+            let pageView = UIView(frame: CGRect(x: CGFloat(index) * (holderView1.frame.size.width), y: 0, width: holderView1.frame.size.width, height: holderView1.frame.size.height))
+            scrollView.addSubview(pageView)
+            
+            
             
             //ImageView
-            let imgInstruksi = UIImageView(frame: frame)
-             //  imgInstruksi.contentMode = .scaleAspectFill
+            let imgInstruksi = UIImageView(frame: CGRect(x: 10, y: 0, width: pageView.frame.size.width-20, height: pageView.frame.size.height-60-130-15))
+            let urlGambar = URL(string: arrayImg[index])
+            imgInstruksi.contentMode = .scaleAspectFill
             imgInstruksi.load(url: urlGambar!)
             
             //label
-            let lblInstruksi = UILabel(frame: frame)
-            lblInstruksi.text = dataJson[index].instruksi!
+            let lblInstruksi = UILabel(frame: CGRect(x: 10, y: 300, width: pageView.frame.size.width-20, height: 120))
+            lblInstruksi.textAlignment = .center
+            lblInstruksi.font = UIFont(name: "SF Pro Rounded", size: 20)
+            lblInstruksi.textColor = .black
+            lblInstruksi.numberOfLines = 0
+            lblInstruksi.text = arrayStep[index]
             
             //add to scrollview
-            self.scrollView.addSubview(imgInstruksi)
-            self.scrollView.addSubview(lblInstruksi)
+            pageView.addSubview(imgInstruksi)
+            pageView.addSubview(lblInstruksi)
             
             
+            
+            pageController.addTarget(self, action: #selector(pageControlDidChange(_:)), for: .valueChanged)
+            pageController.numberOfPages = dataJson.count
+            holderView1.addSubview(pageController)
+            pageController.backgroundColor = .black
+            pageController.currentPageIndicatorTintColor = .white
             
         }
         
         
-        scrollView.contentSize = CGSize(width: (scrollView.frame.size.width * CGFloat(dataJson.count)),height: scrollView.frame.size.height)
-        scrollView.delegate = self
+        scrollView.contentSize = CGSize(width: holderView1.frame.size.width*CGFloat(dataJson.count), height: 0)
+        scrollView.isPagingEnabled = true
         
 
      }
@@ -89,16 +122,11 @@ class DetailReceiptVC: UIViewController, UIScrollViewDelegate{
         let pageNumber = scrollView.contentOffset.x / scrollView.frame.size.width
         pageController.currentPage = Int(pageNumber)
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    @objc func pageControlDidChange(_ sender: UIPageControl){
+        let current = sender.currentPage
+        scrollView.setContentOffset(CGPoint(x: holderView1.frame.size.width * CGFloat(current), y: 0), animated: true)
     }
-    */
     
    
 

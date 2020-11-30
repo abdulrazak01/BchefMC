@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aDt-Pa-WiR">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aDt-Pa-WiR">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -138,7 +138,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qiy-Sf-Yqp">
                                 <rect key="frame" x="0.0" y="155" width="414" height="707"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" red="0.039215686270000001" green="0.078431372550000003" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="260" id="ev0-dx-4Cr" customClass="CustomTVC" customModule="BeChef" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="260"/>
@@ -196,7 +196,7 @@
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1tX-Ph-dk5"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.039215686274509803" green="0.078431372549019607" blue="0.30588235294117649" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="qiy-Sf-Yqp" secondAttribute="trailing" id="1Iv-18-IrU"/>
                             <constraint firstItem="1tX-Ph-dk5" firstAttribute="bottom" secondItem="qiy-Sf-Yqp" secondAttribute="bottom" id="42K-aQ-3xQ"/>
@@ -204,7 +204,7 @@
                             <constraint firstItem="qiy-Sf-Yqp" firstAttribute="top" secondItem="1tX-Ph-dk5" secondAttribute="top" constant="15" id="Y6a-y7-zyo"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Daftar Resep" id="7TO-Fj-8u0"/>
+                    <navigationItem key="navigationItem" title="Daftar Resep" id="7TO-Fj-8u0" colorLabel="IBBuiltInLabel-Gray"/>
                     <connections>
                         <outlet property="tblView" destination="qiy-Sf-Yqp" id="OKz-O2-1oj"/>
                     </connections>
@@ -221,34 +221,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z1m-Z1-OKv">
-                                <rect key="frame" x="20" y="44" width="374" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="lWi-Ol-Ank">
-                                <rect key="frame" x="146" y="805" width="122" height="28"/>
-                            </pageControl>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pHC-W0-1pr">
-                                <rect key="frame" x="0.0" y="72" width="414" height="664.5"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </scrollView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P8D-bM-Rc7">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Kbp-dr-vV1"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.038623366499999999" green="0.076770447189999994" blue="0.30590328570000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="z1m-Z1-OKv" firstAttribute="top" secondItem="Kbp-dr-vV1" secondAttribute="top" id="Bo4-aa-HOd"/>
-                            <constraint firstItem="lWi-Ol-Ank" firstAttribute="leading" secondItem="Kbp-dr-vV1" secondAttribute="leading" constant="146" id="HJB-WA-Vlx"/>
-                            <constraint firstItem="Kbp-dr-vV1" firstAttribute="bottom" secondItem="lWi-Ol-Ank" secondAttribute="bottom" constant="29" id="Jpu-Xi-LDo"/>
-                            <constraint firstItem="z1m-Z1-OKv" firstAttribute="leading" secondItem="Kbp-dr-vV1" secondAttribute="leading" constant="20" id="SMF-Ve-kBH"/>
-                            <constraint firstItem="Kbp-dr-vV1" firstAttribute="trailing" secondItem="z1m-Z1-OKv" secondAttribute="trailing" constant="20" id="frp-se-IFb"/>
+                            <constraint firstItem="P8D-bM-Rc7" firstAttribute="leading" secondItem="Kbp-dr-vV1" secondAttribute="leading" id="55S-EH-O0m"/>
+                            <constraint firstItem="P8D-bM-Rc7" firstAttribute="top" secondItem="Kbp-dr-vV1" secondAttribute="top" id="Apa-7e-cN3"/>
+                            <constraint firstItem="P8D-bM-Rc7" firstAttribute="bottom" secondItem="Kbp-dr-vV1" secondAttribute="bottom" id="PUS-Jg-WEN"/>
+                            <constraint firstItem="P8D-bM-Rc7" firstAttribute="trailing" secondItem="Kbp-dr-vV1" secondAttribute="trailing" id="gQv-C4-p03"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="lblInstruction" destination="z1m-Z1-OKv" id="d27-dv-of2"/>
-                        <outlet property="pageController" destination="lWi-Ol-Ank" id="0Wb-fd-S9s"/>
-                        <outlet property="scrollView" destination="pHC-W0-1pr" id="Df9-SO-xIZ"/>
+                        <outlet property="holderView1" destination="P8D-bM-Rc7" id="Cc2-VN-cwl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jcQ-xg-jpY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
