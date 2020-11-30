@@ -41,6 +41,7 @@ class ViewController: UIViewController {
     var checked = false
     @IBOutlet weak var ingredientsLabel: UILabel!
     @IBOutlet weak var searchButton: UIButton!
+    @IBOutlet weak var lblSubTitle: UILabel!
     
     
     @IBOutlet weak var nasi: UIButton!
@@ -51,21 +52,28 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        self.navigationItem.title = "Mulai Memasak"
+                let attribute = [NSAttributedString.Key.font:UIFont(name: "SFProRounded-Bold", size: 38)]
+                self.navigationController?.navigationBar.titleTextAttributes = attribute as [NSAttributedString.Key : Any]
+        
         nasi.layer.cornerRadius = 10.0
         mie.layer.cornerRadius = 10.0
         telur.layer.cornerRadius = 10.0
         roti.layer.cornerRadius = 10.0
-        
         
         if #available(iOS 13.0, *) {
                 // Always adopt a light interface style.
                 overrideUserInterfaceStyle = .light
             }
         
+        lblSubTitle.textAlignment = .center
+        lblSubTitle.font = UIFont(name: "SFProRounded-Regular", size: 24)
+        
         searchButton.isEnabled = false
         searchButton.backgroundColor = .gray
         searchButton.layer.cornerRadius = 10.0
-        
+        searchButton.setTitle("Ayo Masak!", for: .normal)
+        searchButton.titleLabel?.font = UIFont(name: "SFProRounded-Regular", size: 32)
         
     }
     
@@ -154,15 +162,12 @@ class ViewController: UIViewController {
         } else {
             searchButton.isEnabled = false
             searchButton.backgroundColor = .gray
-    }
-    
-   
-    
-    
-   
-       
         }
     }
+    
+    
+
+}
 
 
 
