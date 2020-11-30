@@ -162,7 +162,7 @@ extension ReceiptVC: UITableViewDataSource,UITableViewDelegate{
         vc?.bumbu = searchArr[indexPath.row].value(forKey: "seasoning") as! String
         vc?.step = searchArr[indexPath.row].value(forKey: "instruction") as! String
         vc?.image = UIImage(contentsOfFile: imageasset.fileURL!.path)!
-        
+        vc?.time = searchArr[indexPath.row].value(forKey: "time") as! String
         
     }
 }
