@@ -30,6 +30,9 @@ class DetailReceiptVC: UIViewController, UIScrollViewDelegate{
     //Instanciate with global scope
     var subTitleLabel = UILabel()
     var buttonEnd = UIButton()
+    var closeButton = UIButton()
+    var leftButton = UIButton()
+    var rightButton = UIButton()
     
     
     
@@ -39,14 +42,11 @@ class DetailReceiptVC: UIViewController, UIScrollViewDelegate{
                 // Always adopt a light interface style.
                 overrideUserInterfaceStyle = .light
             }
+        
+        self.navigationController?.isNavigationBarHidden = true
         scrollView.delegate = self
         pageController.currentPage = 0
         readLangkah()
-        
-        for family in UIFont.familyNames.sorted() {
-            let names = UIFont.fontNames(forFamilyName: family)
-            print("Family: \(family) Font names: \(names)")
-        }
         
     }
     
@@ -83,7 +83,7 @@ class DetailReceiptVC: UIViewController, UIScrollViewDelegate{
         pageController.frame = CGRect(x: 10, y: holderView1.frame.size.height-175, width: holderView1.frame.size.width-20, height: 70)
         
         //title Label
-        let titleLabel = UILabel(frame: CGRect(x: 20, y: -40, width: holderView1.frame.size.width-40, height: 120))
+        let titleLabel = UILabel(frame: CGRect(x: 20, y: 60, width: holderView1.frame.size.width-40, height: 120))
         titleLabel.textAlignment = .center
         titleLabel.font = UIFont(name: "SFProRounded-Bold", size: 36)
         //titleLabel.font = UIFont.boldSystemFont(ofSize: 36)
@@ -93,7 +93,7 @@ class DetailReceiptVC: UIViewController, UIScrollViewDelegate{
         holderView1.addSubview(titleLabel)
         
         //Subtitle Label
-        subTitleLabel = UILabel(frame: CGRect(x: 0, y: 0, width: holderView1.frame.size.width-10, height: 120))
+        subTitleLabel = UILabel(frame: CGRect(x: 0, y: 100, width: holderView1.frame.size.width-10, height: 120))
         subTitleLabel.textAlignment = .center
         subTitleLabel.font = UIFont(name: "SFProRounded-Regular", size: 17)
         subTitleLabel.textColor = UIColor(hexString: "B5A3A3")
@@ -106,9 +106,44 @@ class DetailReceiptVC: UIViewController, UIScrollViewDelegate{
         buttonEnd = UIButton(frame: CGRect(x: 40, y: holderView1.frame.size.height-100, width: holderView1.frame.size.width-80, height: 50))
         
         
+        //CloseButton
+        closeButton =  UIButton(frame: CGRect(x: holderView1.frame.size.width * 0.866, y: 70, width: 36, height: 36))
+        closeButton.setTitle("􀁡", for: .normal)
+        closeButton.setTitleColor(UIColor(red: 1, green: 0.78, blue: 0.07, alpha: 1), for: .normal)
+        closeButton.titleLabel?.font = UIFont(name: "SFProRounded-Regular", size: 28)
+        closeButton.addTarget(self, action: #selector(pressedClose(_ :)), for: .touchUpInside)
+        closeButton.layer.cornerRadius = closeButton.frame.width / 2
+        closeButton.layer.masksToBounds = true
+        holderView1.addSubview(closeButton)
+        
+        
+        //LeftButton
+        leftButton = UIButton(frame: CGRect(x: 16, y: (holderView1.frame.size.height-58)/2, width: 58, height: 58))
+        leftButton.backgroundColor = UIColor(red: 0.047, green: 0.067, blue: 0.219, alpha: 0.7)
+        leftButton.setTitle("􀄦", for: .normal)
+        leftButton.setTitleColor(.white, for: .normal)
+        leftButton.titleLabel?.font = UIFont(name: "SFProRounded-Regular", size: 32)
+        leftButton.addTarget(self, action: #selector(pressedLeft(_ :)), for: .touchUpInside)
+        leftButton.layer.cornerRadius = leftButton.frame.width / 2
+        leftButton.isHidden = true
+        leftButton.layer.masksToBounds = true
+        holderView1.addSubview(leftButton)
+        
+        //RightButton
+        rightButton = UIButton(frame: CGRect(x: holderView1.frame.size.width * 0.795, y: (holderView1.frame.size.height-58)/2, width: 58, height: 58))
+        rightButton.backgroundColor = UIColor(red: 0.047, green: 0.067, blue: 0.219, alpha: 0.7)
+        rightButton.setTitle("􀄧", for: .normal)
+        rightButton.setTitleColor(.white, for: .normal)
+        rightButton.titleLabel?.font = UIFont(name: "SFProRounded-Regular", size: 32)
+        rightButton.addTarget(self, action: #selector(pressedRight(_ :)), for: .touchUpInside)
+        rightButton.layer.cornerRadius = rightButton.frame.width / 2
+        rightButton.layer.masksToBounds = true
+        holderView1.addSubview(rightButton)
+
+        
+        
         
         for index in 0..<dataJson.count{
-            
             
             let pageView = UIView(frame: CGRect(x: CGFloat(index) * (holderView1.frame.size.width), y: 0, width: holderView1.frame.size.width, height: holderView1.frame.size.height))
             scrollView.addSubview(pageView)
@@ -124,9 +159,9 @@ class DetailReceiptVC: UIViewController, UIScrollViewDelegate{
             imgInstruksi.load(url: urlGambar!)
             
             //label
-            let lblInstruksi = UILabel(frame: CGRect(x: 10, y: 500, width: pageView.frame.size.width-20, height: 120))
+            let lblInstruksi = UILabel(frame: CGRect(x: 30, y: pageView.frame.size.height/2 * 1.4, width: pageView.frame.size.width-60, height: 120))
             lblInstruksi.textAlignment = .center
-            lblInstruksi.font = UIFont(name: "SF-Pro-Rounded-Regular", size: 20)
+            lblInstruksi.font = UIFont(name: "SFProRounded-Bold", size: 22)
             lblInstruksi.textColor = .white
             lblInstruksi.numberOfLines = 0
             lblInstruksi.text = arrayStep[index]
@@ -143,23 +178,15 @@ class DetailReceiptVC: UIViewController, UIScrollViewDelegate{
             pageView.addSubview(imgFilter)
             pageView.addSubview(lblInstruksi)
             
-            //addButton
-           
-//            button.setTitleColor(.white, for: .normal)
-//            button.backgroundColor = .orange
-//            button.layer.cornerRadius = 12
-//            button.tag = index+1
-//            button.isHidden = true
-//
-//            if index == 2 {
-//                button.setTitle("Mulai", for: .normal)
-//                button.isHidden = false
-//            }
-            
+            //EndButton
+            buttonEnd.setTitleColor(.white, for: .normal)
+            buttonEnd.backgroundColor = .orange
+            buttonEnd.layer.cornerRadius = 12
             
             
             pageController.addTarget(self, action: #selector(pageControlDidChange(_:)), for: .valueChanged)
             pageController.numberOfPages = dataJson.count
+
             //holderView1.addSubview(pageController)
             //pageController.backgroundColor = .black
             //pageController.currentPageIndicatorTintColor = .white
@@ -178,13 +205,36 @@ class DetailReceiptVC: UIViewController, UIScrollViewDelegate{
         print(pageNumber)
         subTitleLabel.text = "Langkah \(Int(pageNumber)+1) dari \(totalStep)"
         
-
+        
+        if  Int(pageNumber)+1 == 1 {
+            leftButton.isHidden = true
+        } else {
+            leftButton.isHidden = false
+        }
+        
+        if  Int(pageNumber)+1 == totalStep {
+            rightButton.isHidden = true
+        } else {
+            rightButton.isHidden = false
+        }
         
     }
     
     @objc func pageControlDidChange(_ sender: UIPageControl){
         let current = sender.currentPage
         scrollView.setContentOffset(CGPoint(x: holderView1.frame.size.width * CGFloat(current), y: 0), animated: true)
+    }
+    
+    @objc func pressedClose(_ sender: UIButton) {
+                    print("Pressed")
+    }
+    
+    @objc func pressedLeft(_ sender: UIButton) {
+                    print("Pressed")
+    }
+    
+    @objc func pressedRight(_ sender: UIButton) {
+                    print("Pressed")
     }
 
 }
