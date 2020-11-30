@@ -16,6 +16,7 @@ class RecipeStepVC: UIViewController {
     @IBOutlet weak var lblTitleStep: UILabel!
     @IBOutlet weak var lblstep: UILabel!
     @IBOutlet weak var detailBtn: UIButton!
+    @IBOutlet weak var lbltime: UILabel!
     
     
     var dataJson = [Jobs]()
@@ -24,6 +25,7 @@ class RecipeStepVC: UIViewController {
     var bumbu = ""
     var step = ""
     var stepToText = [String]()
+    var time = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,6 +41,7 @@ class RecipeStepVC: UIViewController {
         lblbumbu.text = bumbu
         lblstep.text = stepToText.joined(separator: " \n")
         detailimg.image = image
+        lbltime.text = time
     }
     
     
