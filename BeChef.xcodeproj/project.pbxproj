@@ -69,6 +69,15 @@
 		40DF32DC255BB087002EEE93 /* tepung.png in Resources */ = {isa = PBXBuildFile; fileRef = 40DF32D9255BB087002EEE93 /* tepung.png */; };
 		40DF32DD255BB087002EEE93 /* mie.png in Resources */ = {isa = PBXBuildFile; fileRef = 40DF32DA255BB087002EEE93 /* mie.png */; };
 		40DF32DE255BB087002EEE93 /* spaghetti.png in Resources */ = {isa = PBXBuildFile; fileRef = 40DF32DB255BB087002EEE93 /* spaghetti.png */; };
+		D55E30F02574DDD500C62000 /* SF-Pro-Rounded-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = D55E30E72574DDD400C62000 /* SF-Pro-Rounded-Medium.otf */; };
+		D55E30F12574DDD500C62000 /* SF-Pro-Rounded-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = D55E30E82574DDD500C62000 /* SF-Pro-Rounded-Regular.otf */; };
+		D55E30F22574DDD500C62000 /* SF-Pro-Rounded-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = D55E30E92574DDD500C62000 /* SF-Pro-Rounded-Light.otf */; };
+		D55E30F32574DDD500C62000 /* SF-Pro-Rounded-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = D55E30EA2574DDD500C62000 /* SF-Pro-Rounded-Thin.otf */; };
+		D55E30F42574DDD500C62000 /* SF-Pro-Rounded-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = D55E30EB2574DDD500C62000 /* SF-Pro-Rounded-Heavy.otf */; };
+		D55E30F52574DDD500C62000 /* SF-Pro-Rounded-Ultralight.otf in Resources */ = {isa = PBXBuildFile; fileRef = D55E30EC2574DDD500C62000 /* SF-Pro-Rounded-Ultralight.otf */; };
+		D55E30F62574DDD500C62000 /* SF-Pro-Rounded-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = D55E30ED2574DDD500C62000 /* SF-Pro-Rounded-Black.otf */; };
+		D55E30F72574DDD500C62000 /* SF-Pro-Rounded-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D55E30EE2574DDD500C62000 /* SF-Pro-Rounded-Bold.otf */; };
+		D55E30F82574DDD500C62000 /* SF-Pro-Rounded-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D55E30EF2574DDD500C62000 /* SF-Pro-Rounded-Semibold.otf */; };
 		D5B82F2B256BCB1200802B0D /* RecipeStepVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B82F2A256BCB1200802B0D /* RecipeStepVC.swift */; };
 		D5F126B4255FA8D000DF7B4D /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F126B3255FA8D000DF7B4D /* OnboardingViewController.swift */; };
 /* End PBXBuildFile section */
@@ -139,6 +148,15 @@
 		40DF32D9255BB087002EEE93 /* tepung.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tepung.png; path = Asset/tepung.png; sourceTree = SOURCE_ROOT; };
 		40DF32DA255BB087002EEE93 /* mie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mie.png; path = Asset/mie.png; sourceTree = SOURCE_ROOT; };
 		40DF32DB255BB087002EEE93 /* spaghetti.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = spaghetti.png; path = Asset/spaghetti.png; sourceTree = SOURCE_ROOT; };
+		D55E30E72574DDD400C62000 /* SF-Pro-Rounded-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Medium.otf"; sourceTree = "<group>"; };
+		D55E30E82574DDD500C62000 /* SF-Pro-Rounded-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Regular.otf"; sourceTree = "<group>"; };
+		D55E30E92574DDD500C62000 /* SF-Pro-Rounded-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Light.otf"; sourceTree = "<group>"; };
+		D55E30EA2574DDD500C62000 /* SF-Pro-Rounded-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Thin.otf"; sourceTree = "<group>"; };
+		D55E30EB2574DDD500C62000 /* SF-Pro-Rounded-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Heavy.otf"; sourceTree = "<group>"; };
+		D55E30EC2574DDD500C62000 /* SF-Pro-Rounded-Ultralight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Ultralight.otf"; sourceTree = "<group>"; };
+		D55E30ED2574DDD500C62000 /* SF-Pro-Rounded-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Black.otf"; sourceTree = "<group>"; };
+		D55E30EE2574DDD500C62000 /* SF-Pro-Rounded-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Bold.otf"; sourceTree = "<group>"; };
+		D55E30EF2574DDD500C62000 /* SF-Pro-Rounded-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Semibold.otf"; sourceTree = "<group>"; };
 		D5B82F2A256BCB1200802B0D /* RecipeStepVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeStepVC.swift; sourceTree = "<group>"; };
 		D5F126B3255FA8D000DF7B4D /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -199,6 +217,7 @@
 				40DB5F20254FD5D8009BAB81 /* Assets.xcassets */,
 				40DB5F22254FD5D8009BAB81 /* LaunchScreen.storyboard */,
 				40DB5F25254FD5D8009BAB81 /* Info.plist */,
+				D55E30E62574DDAB00C62000 /* New Group */,
 				40DB5F31254FD5F7009BAB81 /* Gambar */,
 				40DB5F1D254FD5D6009BAB81 /* BeChef.xcdatamodeld */,
 			);
@@ -258,6 +277,22 @@
 				40DB5F36254FD61A009BAB81 /* Rectangle.png */,
 			);
 			path = Gambar;
+			sourceTree = "<group>";
+		};
+		D55E30E62574DDAB00C62000 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				D55E30ED2574DDD500C62000 /* SF-Pro-Rounded-Black.otf */,
+				D55E30EE2574DDD500C62000 /* SF-Pro-Rounded-Bold.otf */,
+				D55E30EB2574DDD500C62000 /* SF-Pro-Rounded-Heavy.otf */,
+				D55E30E92574DDD500C62000 /* SF-Pro-Rounded-Light.otf */,
+				D55E30E72574DDD400C62000 /* SF-Pro-Rounded-Medium.otf */,
+				D55E30E82574DDD500C62000 /* SF-Pro-Rounded-Regular.otf */,
+				D55E30EF2574DDD500C62000 /* SF-Pro-Rounded-Semibold.otf */,
+				D55E30EA2574DDD500C62000 /* SF-Pro-Rounded-Thin.otf */,
+				D55E30EC2574DDD500C62000 /* SF-Pro-Rounded-Ultralight.otf */,
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -326,11 +361,15 @@
 				40DF32C9255BAE17002EEE93 /* Telur.png in Resources */,
 				406EF2A1255CEC0D000A0A48 /* Kangkung.png in Resources */,
 				40DF32CB255BAE17002EEE93 /* cumicumi.png in Resources */,
+				D55E30F72574DDD500C62000 /* SF-Pro-Rounded-Bold.otf in Resources */,
 				40DF32C0255BAE17002EEE93 /* Tomat.png in Resources */,
+				D55E30F02574DDD500C62000 /* SF-Pro-Rounded-Medium.otf in Resources */,
 				3D5EF5132573EB3600AB36E3 /* monsterForOnboarding1.png in Resources */,
 				40DF32C4255BAE17002EEE93 /* tauge.png in Resources */,
 				40DF32C7255BAE17002EEE93 /* daging.png in Resources */,
+				D55E30F42574DDD500C62000 /* SF-Pro-Rounded-Heavy.otf in Resources */,
 				40DB5F24254FD5D8009BAB81 /* LaunchScreen.storyboard in Resources */,
+				D55E30F82574DDD500C62000 /* SF-Pro-Rounded-Semibold.otf in Resources */,
 				3D5EF5192573EB3600AB36E3 /* Telur Selected.png in Resources */,
 				40DF32CD255BAE17002EEE93 /* kol.png in Resources */,
 				406EF2A4255D02B2000A0A48 /* petai.png in Resources */,
@@ -339,12 +378,15 @@
 				40DF32DE255BB087002EEE93 /* spaghetti.png in Resources */,
 				40DF32C2255BAE17002EEE93 /* terasi.png in Resources */,
 				40DF32C6255BAE17002EEE93 /* Keju.png in Resources */,
+				D55E30F12574DDD500C62000 /* SF-Pro-Rounded-Regular.otf in Resources */,
 				406EF296255CE888000A0A48 /* timun.png in Resources */,
 				40DF32D5255BAE17002EEE93 /* tahu.png in Resources */,
+				D55E30F22574DDD500C62000 /* SF-Pro-Rounded-Light.otf in Resources */,
 				40DF32D7255BAE17002EEE93 /* jagung.png in Resources */,
 				3D5EF51C2573EB3600AB36E3 /* NasiGG.png in Resources */,
 				40DF32DC255BB087002EEE93 /* tepung.png in Resources */,
 				40DB5F38254FD61A009BAB81 /* Rectangle.png in Resources */,
+				D55E30F52574DDD500C62000 /* SF-Pro-Rounded-Ultralight.otf in Resources */,
 				40DB5F21254FD5D8009BAB81 /* Assets.xcassets in Resources */,
 				40DF32D4255BAE17002EEE93 /* kembangkol.png in Resources */,
 				40DF32D6255BAE17002EEE93 /* terong.png in Resources */,
@@ -354,9 +396,11 @@
 				3D5EF5172573EB3600AB36E3 /* filterBlue.png in Resources */,
 				40DF32CE255BAE17002EEE93 /* bawangmerah.png in Resources */,
 				40DF32D3255BAE17002EEE93 /* sosis.png in Resources */,
+				D55E30F62574DDD500C62000 /* SF-Pro-Rounded-Black.otf in Resources */,
 				40DB5F40254FDA7E009BAB81 /* kotakoren.png in Resources */,
 				3D5EF5152573EB3600AB36E3 /* Mie Selected.png in Resources */,
 				40DF32CA255BAE17002EEE93 /* jamur.png in Resources */,
+				D55E30F32574DDD500C62000 /* SF-Pro-Rounded-Thin.otf in Resources */,
 				40DF32D2255BAE17002EEE93 /* selada.png in Resources */,
 				3D5EF5182573EB3600AB36E3 /* Roti Selected.png in Resources */,
 				3D5EF5162573EB3600AB36E3 /* Roti Idle.png in Resources */,
