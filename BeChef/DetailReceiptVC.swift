@@ -26,6 +26,7 @@ class DetailReceiptVC: UIViewController, UIScrollViewDelegate{
     var arrayStep = [String]()
     var arrayImg = [String]()
     var totalStep: Int = 0
+    var currentStep: Int = 0
     
     //Instanciate with global scope
     var subTitleLabel = UILabel()
@@ -104,6 +105,12 @@ class DetailReceiptVC: UIViewController, UIScrollViewDelegate{
         
         //Button End
         buttonEnd = UIButton(frame: CGRect(x: 40, y: holderView1.frame.size.height-100, width: holderView1.frame.size.width-80, height: 50))
+        buttonEnd.setTitleColor(.white, for: .normal)
+        buttonEnd.backgroundColor = .orange
+        buttonEnd.layer.cornerRadius = 12
+        buttonEnd.addTarget(self, action: #selector(pressedClose(_ :)), for: .touchUpInside)
+        buttonEnd.isHidden = true
+        holderView1.addSubview(buttonEnd)
         
         
         //CloseButton
@@ -178,11 +185,6 @@ class DetailReceiptVC: UIViewController, UIScrollViewDelegate{
             pageView.addSubview(imgFilter)
             pageView.addSubview(lblInstruksi)
             
-            //EndButton
-            buttonEnd.setTitleColor(.white, for: .normal)
-            buttonEnd.backgroundColor = .orange
-            buttonEnd.layer.cornerRadius = 12
-            
             
             pageController.addTarget(self, action: #selector(pageControlDidChange(_:)), for: .valueChanged)
             pageController.numberOfPages = dataJson.count
@@ -202,22 +204,9 @@ class DetailReceiptVC: UIViewController, UIScrollViewDelegate{
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         let pageNumber = scrollView.contentOffset.x / scrollView.frame.size.width
         pageController.currentPage = Int(pageNumber)
-        print(pageNumber)
-        subTitleLabel.text = "Langkah \(Int(pageNumber)+1) dari \(totalStep)"
+        currentStep = Int(pageNumber)
         
-        
-        if  Int(pageNumber)+1 == 1 {
-            leftButton.isHidden = true
-        } else {
-            leftButton.isHidden = false
-        }
-        
-        if  Int(pageNumber)+1 == totalStep {
-            rightButton.isHidden = true
-        } else {
-            rightButton.isHidden = false
-        }
-        
+        checkCurrentPage()
     }
     
     @objc func pageControlDidChange(_ sender: UIPageControl){
@@ -226,18 +215,82 @@ class DetailReceiptVC: UIViewController, UIScrollViewDelegate{
     }
     
     @objc func pressedClose(_ sender: UIButton) {
-                    print("Pressed")
+                    print("Press Close")
     }
     
     @objc func pressedLeft(_ sender: UIButton) {
-                    print("Pressed")
+        currentStep -= 1
+        let contentOffset = CGPoint(x: holderView1.frame.size.width * CGFloat(currentStep), y: scrollView.contentOffset.y)
+        scrollView.setContentOffset(contentOffset, animated: true)
+        print(currentStep)
+        print("Press Left")
+        checkCurrentPage()
     }
     
     @objc func pressedRight(_ sender: UIButton) {
-                    print("Pressed")
+        // Set CGPoint based on right scroll
+        // X = - (currentStep + 1) * scrollViewWidth
+        currentStep += 1
+        let contentOffset = CGPoint(x: holderView1.frame.size.width * CGFloat(currentStep), y: scrollView.contentOffset.y)
+        print(currentStep)
+        scrollView.setContentOffset(contentOffset, animated: true)
+        print("Press Right")
+        print(currentStep+1)
+        checkCurrentPage()
+    }
+    
+    func checkCurrentPage (){
+        
+        subTitleLabel.text = "Langkah \(currentStep+1) dari \(totalStep)"
+        
+        
+        if  currentStep+1 == 1 {
+            leftButton.isHidden = true
+        } else {
+            leftButton.isHidden = false
+        }
+        
+        if  currentStep+1 == totalStep {
+            rightButton.isHidden = true
+            buttonEnd.isHidden = false
+        } else {
+            rightButton.isHidden = false
+            buttonEnd.isHidden = true
+        }
     }
 
+ 
 }
+
+enum ScrollDirection {
+    case Top
+    case Right
+    case Bottom
+    case Left
+    
+    func contentOffsetWith(scrollView: UIScrollView) -> CGPoint {
+        var contentOffset = CGPoint.zero
+        switch self {
+            case .Top:
+                contentOffset = CGPoint(x: 0, y: -scrollView.contentInset.top)
+            case .Right:
+                contentOffset = CGPoint(x: scrollView.contentSize.width - scrollView.bounds.size.width, y: 0)
+            case .Bottom:
+                contentOffset = CGPoint(x: 0, y: scrollView.contentSize.height - scrollView.bounds.size.height)
+            case .Left:
+                contentOffset = CGPoint(x: -scrollView.contentInset.left, y: 0)
+        }
+        return contentOffset
+    }
+}
+
+
+extension UIScrollView {
+    func scrollTo(direction: ScrollDirection, animated: Bool = true) {
+        self.setContentOffset(direction.contentOffsetWith(scrollView: self), animated: animated)
+    }
+}
+
 
 extension UIImageView {
     func load(url: URL) {
