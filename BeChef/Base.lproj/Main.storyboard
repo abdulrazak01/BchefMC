@@ -330,7 +330,7 @@
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="backgroundColor" red="0.047058823529411764" green="0.086274509803921567" blue="0.29411764705882354" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstItem="VpF-iu-rZJ" firstAttribute="leading" secondItem="sJ6-DA-u9b" secondAttribute="leading" constant="25" id="0NZ-sz-2zj"/>
                                             <constraint firstItem="yVM-eh-jzw" firstAttribute="top" secondItem="5bn-so-Kx0" secondAttribute="bottom" constant="32.5" id="36L-D9-8lw"/>
@@ -370,7 +370,7 @@
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6UW-Qq-wWz"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.047058823529411764" green="0.086274509803921567" blue="0.29411764705882354" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="LjO-of-s7p" firstAttribute="top" secondItem="6UW-Qq-wWz" secondAttribute="top" id="8ys-bs-apG"/>
                             <constraint firstItem="LjO-of-s7p" firstAttribute="leading" secondItem="6UW-Qq-wWz" secondAttribute="leading" id="96m-2R-222"/>
