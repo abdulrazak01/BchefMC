@@ -30,10 +30,8 @@ class RecipeStepVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //self.navigationController?.isNavigationBarHidden = false
-    
-        tampilLabel()
         
+        tampilLabel()
         lblTitleSea.text = "Seasoning"
         lblTitleStep.text = "Instruction"
         

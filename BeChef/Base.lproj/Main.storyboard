@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aDt-Pa-WiR">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aDt-Pa-WiR">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -133,7 +133,7 @@
         <!--Daftar Resep-->
         <scene sceneID="zHJ-bc-S9D">
             <objects>
-                <viewController id="m5p-cP-eub" customClass="ReceiptVC" customModule="BeChef" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ReceiptVC" id="m5p-cP-eub" customClass="ReceiptVC" customModule="BeChef" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0T1-Cj-uIN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -232,7 +232,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jcQ-xg-jpY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2976.811594202899" y="801.5625"/>
+            <point key="canvasLocation" x="4121.739130434783" y="793.52678571428567"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="cjo-vy-lKP">
@@ -392,6 +392,7 @@
                             <constraint firstItem="LjO-of-s7p" firstAttribute="bottom" secondItem="6UW-Qq-wWz" secondAttribute="bottom" id="QWu-pQ-VRM"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="K1X-Jv-fdl"/>
                     <connections>
                         <outlet property="detailimg" destination="iz3-lh-0qq" id="iyI-0C-fyO"/>
                         <outlet property="lblTitleSea" destination="QBw-U1-KKo" id="cy1-II-ca2"/>
@@ -404,7 +405,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j5t-yL-Pjd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2189.8550724637685" y="801.5625"/>
+            <point key="canvasLocation" x="3100.0000000000005" y="801.5625"/>
         </scene>
     </scenes>
     <resources>
@@ -413,9 +414,6 @@
         <image name="Roti Idle.png" width="900" height="900"/>
         <image name="Telurgg.png" width="900" height="900"/>
         <image name="ayam.png" width="210" height="210"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
