@@ -21,10 +21,10 @@ class CustomTVC: UITableViewCell {
         // Initialization code
         img.layer.cornerRadius = 12.0
         
-       //lbltitle.font = UIFont(name: "SF Pro Display", size: 17)
-        //lbltitle.textColor = .white
-        //lbldeskripsi.font = UIFont(name: "SF Pro Display", size: 17)
-        //lbldeskripsi.textColor = .white
+       
+       lbltitle.font = UIFont(name: "SFProRounded-Bold", size: 20)
+        lbldeskripsi.font = UIFont(name: "SFProRounded- Regular", size: 17)
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

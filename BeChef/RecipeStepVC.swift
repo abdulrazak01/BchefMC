@@ -42,6 +42,18 @@ class RecipeStepVC: UIViewController {
         lblstep.text = stepToText.joined(separator: " \n")
         detailimg.image = image
         lbltime.text = time
+        
+        lbltitle.font = UIFont(name: "SFProRounded-Bold", size: 32)
+        lblTitleSea.font = UIFont(name: "SFProRounded-Bold", size: 20)
+        lblTitleStep.font = UIFont(name: "SFProRounded-Bold", size: 20)
+        
+        lbltime.font = UIFont(name: "SFProRounded-Regular", size: 17)
+        lblbumbu.font = UIFont(name: "SFProRounded-Regular", size: 17)
+        lblstep.font = UIFont(name: "SFProRounded-Regular", size: 17)
+        lbltime.font = UIFont(name: "SFProRounded-Regular", size: 17)
+        
+        
+        
     }
     
     
