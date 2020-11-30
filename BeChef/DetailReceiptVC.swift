@@ -42,6 +42,12 @@ class DetailReceiptVC: UIViewController, UIScrollViewDelegate{
         scrollView.delegate = self
         pageController.currentPage = 0
         readLangkah()
+        
+        for family in UIFont.familyNames.sorted() {
+            let names = UIFont.fontNames(forFamilyName: family)
+            print("Family: \(family) Font names: \(names)")
+        }
+        
     }
     
     override func viewDidLayoutSubviews() {
@@ -79,18 +85,18 @@ class DetailReceiptVC: UIViewController, UIScrollViewDelegate{
         //title Label
         let titleLabel = UILabel(frame: CGRect(x: 20, y: -40, width: holderView1.frame.size.width-40, height: 120))
         titleLabel.textAlignment = .center
-        titleLabel.font = UIFont(name: "SF Pro Rounded", size: 36)
-        titleLabel.font = UIFont.boldSystemFont(ofSize: 36)
+        titleLabel.font = UIFont(name: "SFProRounded-Bold", size: 36)
+        //titleLabel.font = UIFont.boldSystemFont(ofSize: 36)
         titleLabel.textColor = .white
         titleLabel.numberOfLines = 0
         titleLabel.text = tittle
         holderView1.addSubview(titleLabel)
         
         //Subtitle Label
-        subTitleLabel = UILabel(frame: CGRect(x: 0, y: -10, width: holderView1.frame.size.width-10, height: 120))
+        subTitleLabel = UILabel(frame: CGRect(x: 0, y: 0, width: holderView1.frame.size.width-10, height: 120))
         subTitleLabel.textAlignment = .center
-        subTitleLabel.font = UIFont(name: "SF Pro Rounded", size: 17)
-        subTitleLabel.textColor = .white
+        subTitleLabel.font = UIFont(name: "SFProRounded-Regular", size: 17)
+        subTitleLabel.textColor = UIColor(hexString: "B5A3A3")
         subTitleLabel.numberOfLines = 0
         subTitleLabel.text = "Langkah 1 dari \(dataJson.count)"
         
@@ -120,7 +126,7 @@ class DetailReceiptVC: UIViewController, UIScrollViewDelegate{
             //label
             let lblInstruksi = UILabel(frame: CGRect(x: 10, y: 500, width: pageView.frame.size.width-20, height: 120))
             lblInstruksi.textAlignment = .center
-            lblInstruksi.font = UIFont(name: "SF Pro Rounded", size: 20)
+            lblInstruksi.font = UIFont(name: "SF-Pro-Rounded-Regular", size: 20)
             lblInstruksi.textColor = .white
             lblInstruksi.numberOfLines = 0
             lblInstruksi.text = arrayStep[index]
