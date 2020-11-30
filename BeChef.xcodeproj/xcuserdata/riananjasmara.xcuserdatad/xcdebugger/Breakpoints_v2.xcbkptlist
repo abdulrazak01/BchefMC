@@ -20,5 +20,113 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1AD57C21-5FC3-4C05-8DD4-20958AB177D0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BeChef/RecipeStepVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "RecipeStepVC"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "1AD57C21-5FC3-4C05-8DD4-20958AB177D0 - f4e945f227ddb60a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BeChef.RecipeStepVC.lbltime.getter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "BeChef"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/riananjasmara/Desktop/BchefMC/BeChef/RecipeStepVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "1AD57C21-5FC3-4C05-8DD4-20958AB177D0 - 8948b45c1722ee32"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BeChef.RecipeStepVC.lbltime.setter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "BeChef"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/riananjasmara/Desktop/BchefMC/BeChef/RecipeStepVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "155">
+               </Location>
+               <Location
+                  uuid = "1AD57C21-5FC3-4C05-8DD4-20958AB177D0 - 1b9e1207ce5afea5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BeChef.RecipeStepVC.lbltime.modify : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "BeChef"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/riananjasmara/Desktop/BchefMC/BeChef/RecipeStepVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "59">
+               </Location>
+               <Location
+                  uuid = "1AD57C21-5FC3-4C05-8DD4-20958AB177D0 - e518f623e562b803"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BeChef.RecipeStepVC.lbltime.modify : Swift.Optional&lt;__C.UILabel&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "BeChef"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/riananjasmara/Desktop/BchefMC/BeChef/RecipeStepVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  uuid = "1AD57C21-5FC3-4C05-8DD4-20958AB177D0 - 979269f7182a31d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BeChef.RecipeStepVC.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; BeChef.RecipeStepVC"
+                  moduleName = "BeChef"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/riananjasmara/Desktop/BchefMC/BeChef/RecipeStepVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "1339">
+               </Location>
+               <Location
+                  uuid = "1AD57C21-5FC3-4C05-8DD4-20958AB177D0 - 8473bf34eb69471e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BeChef.RecipeStepVC.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;BeChef.RecipeStepVC&gt;"
+                  moduleName = "BeChef"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/riananjasmara/Desktop/BchefMC/BeChef/RecipeStepVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "1274">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

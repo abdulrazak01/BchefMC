@@ -15,7 +15,9 @@ class RecipeStepVC: UIViewController {
     @IBOutlet weak var lblbumbu: UILabel!
     @IBOutlet weak var lblTitleStep: UILabel!
     @IBOutlet weak var lblstep: UILabel!
+   
     @IBOutlet weak var detailBtn: UIButton!
+    
     @IBOutlet weak var lbltime: UILabel!
     
     
@@ -51,6 +53,13 @@ class RecipeStepVC: UIViewController {
         lblbumbu.font = UIFont(name: "SFProRounded-Regular", size: 17)
         lblstep.font = UIFont(name: "SFProRounded-Regular", size: 17)
         lbltime.font = UIFont(name: "SFProRounded-Regular", size: 17)
+        
+        
+        detailBtn.titleLabel?.font = UIFont(name: "SFProRounded-Bold", size: 24)
+      
+        detailBtn.setTitle("Mode per Langkah", for: .normal)
+    
+        detailBtn.layer.cornerRadius = 6
         
         
         

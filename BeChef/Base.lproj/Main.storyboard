@@ -395,6 +395,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="detailBtn" destination="yVM-eh-jzw" id="oIm-go-By9"/>
                         <outlet property="detailimg" destination="iz3-lh-0qq" id="iyI-0C-fyO"/>
                         <outlet property="lblTitleSea" destination="QBw-U1-KKo" id="cy1-II-ca2"/>
                         <outlet property="lblTitleStep" destination="AaT-hW-wh2" id="TRp-qx-RQI"/>
