@@ -20,8 +20,10 @@ class DetailReceiptVC: UIViewController, UIScrollViewDelegate{
         return pageController
     }()
     
-    var tittle = ""
-    var step = ""
+    var image1 = UIImage()
+    var tittle1 = ""
+    var step1 = ""
+    var bumbu1 = ""
     var dataJson = [Jobs]()
     var arrayStep = [String]()
     var arrayImg = [String]()
@@ -67,7 +69,7 @@ class DetailReceiptVC: UIViewController, UIScrollViewDelegate{
         holderView1.addSubview(scrollView)
         
         
-        let JsonfromCK = step.self
+        let JsonfromCK = step1.self
         let JsonString = JsonfromCK.data(using: .utf8)!
         let decoder = JSONDecoder()
         let Json = try! decoder.decode(langkah.self, from: JsonString)
@@ -90,7 +92,7 @@ class DetailReceiptVC: UIViewController, UIScrollViewDelegate{
         //titleLabel.font = UIFont.boldSystemFont(ofSize: 36)
         titleLabel.textColor = .white
         titleLabel.numberOfLines = 0
-        titleLabel.text = tittle
+        titleLabel.text = tittle1
         holderView1.addSubview(titleLabel)
         
         //Subtitle Label
@@ -104,9 +106,11 @@ class DetailReceiptVC: UIViewController, UIScrollViewDelegate{
         totalStep = dataJson.count
         
         //Button End
-        buttonEnd = UIButton(frame: CGRect(x: 40, y: holderView1.frame.size.height-100, width: holderView1.frame.size.width-80, height: 50))
+        buttonEnd = UIButton(frame: CGRect(x: 40, y: holderView1.frame.size.height-100, width: holderView1.frame.size.width-80, height: 57))
         buttonEnd.setTitleColor(.white, for: .normal)
-        buttonEnd.backgroundColor = .orange
+        buttonEnd.setTitle("Selesai", for: .normal)
+        buttonEnd.titleLabel?.font = UIFont(name: "SFProRounded-Bold", size: 24)
+        buttonEnd.backgroundColor = UIColor(hexString: "FF6B00")
         buttonEnd.layer.cornerRadius = 12
         buttonEnd.addTarget(self, action: #selector(pressedClose(_ :)), for: .touchUpInside)
         buttonEnd.isHidden = true
@@ -215,7 +219,14 @@ class DetailReceiptVC: UIViewController, UIScrollViewDelegate{
     }
     
     @objc func pressedClose(_ sender: UIButton) {
-                    print("Press Close")
+        print(step1)
+        let vc = storyboard?.instantiateViewController(withIdentifier: "RecipeStepVC") as? RecipeStepVC
+        self.navigationController?.pushViewController(vc!, animated: true)
+        vc?.step = step1
+        vc?.tittle = tittle1
+        vc?.bumbu = bumbu1
+        vc?.image = image1
+        print("Press Close")
     }
     
     @objc func pressedLeft(_ sender: UIButton) {
@@ -257,37 +268,6 @@ class DetailReceiptVC: UIViewController, UIScrollViewDelegate{
             rightButton.isHidden = false
             buttonEnd.isHidden = true
         }
-    }
-
- 
-}
-
-enum ScrollDirection {
-    case Top
-    case Right
-    case Bottom
-    case Left
-    
-    func contentOffsetWith(scrollView: UIScrollView) -> CGPoint {
-        var contentOffset = CGPoint.zero
-        switch self {
-            case .Top:
-                contentOffset = CGPoint(x: 0, y: -scrollView.contentInset.top)
-            case .Right:
-                contentOffset = CGPoint(x: scrollView.contentSize.width - scrollView.bounds.size.width, y: 0)
-            case .Bottom:
-                contentOffset = CGPoint(x: 0, y: scrollView.contentSize.height - scrollView.bounds.size.height)
-            case .Left:
-                contentOffset = CGPoint(x: -scrollView.contentInset.left, y: 0)
-        }
-        return contentOffset
-    }
-}
-
-
-extension UIScrollView {
-    func scrollTo(direction: ScrollDirection, animated: Bool = true) {
-        self.setContentOffset(direction.contentOffsetWith(scrollView: self), animated: animated)
     }
 }
 

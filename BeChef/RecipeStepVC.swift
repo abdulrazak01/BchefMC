@@ -27,6 +27,8 @@ class RecipeStepVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //self.navigationController?.isNavigationBarHidden = false
     
         tampilLabel()
         
@@ -41,11 +43,14 @@ class RecipeStepVC: UIViewController {
     
     
     func tampilLabel(){
+        print("= STEP ===================")
+        print(step)
+        print("==========================")
         let JsonfromCK = step.self
         let JsonString = JsonfromCK.data(using: .utf8)!
         let decoder = JSONDecoder()
         let Json = try! decoder.decode(langkah.self, from: JsonString)
-        self.dataJson = Json.jobs 
+        self.dataJson = Json.jobs
         
         for i in 0..<dataJson.count {
             let noStep = dataJson[i].step!
@@ -59,8 +64,10 @@ class RecipeStepVC: UIViewController {
     @IBAction func didTapBtn(_ sender: Any) {
         let vc = storyboard?.instantiateViewController(withIdentifier: "DetailViewController") as? DetailReceiptVC
         self.navigationController?.pushViewController(vc!, animated: true)
-        vc?.step = step
-        vc?.tittle = tittle
+        vc?.step1 = step
+        vc?.tittle1 = tittle
+        vc?.bumbu1 = bumbu
+        vc?.image1 = image
         
     }
     
