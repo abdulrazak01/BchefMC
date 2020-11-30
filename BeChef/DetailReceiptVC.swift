@@ -221,12 +221,18 @@ class DetailReceiptVC: UIViewController, UIScrollViewDelegate{
     @objc func pressedClose(_ sender: UIButton) {
         print(step1)
         let vc = storyboard?.instantiateViewController(withIdentifier: "RecipeStepVC") as? RecipeStepVC
-        self.navigationController?.pushViewController(vc!, animated: true)
+        //self.navigationController?.pushViewController(vc!, animated: true)
         vc?.step = step1
         vc?.tittle = tittle1
         vc?.bumbu = bumbu1
         vc?.image = image1
         print("Press Close")
+        self.navigationController?.isNavigationBarHidden = false
+        let viewControllers: [UIViewController] = self.navigationController!.viewControllers as [UIViewController]
+        self.navigationController!.popToViewController(viewControllers[viewControllers.count - 2], animated: true)
+        
+        
+  
     }
     
     @objc func pressedLeft(_ sender: UIButton) {
