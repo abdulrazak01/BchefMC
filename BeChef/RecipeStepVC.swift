@@ -18,6 +18,7 @@ class RecipeStepVC: UIViewController {
    
     @IBOutlet weak var detailBtn: UIButton!
     
+    @IBOutlet weak var viewWithCorner: UIView!
     @IBOutlet weak var lbltime: UILabel!
     
     
@@ -59,6 +60,7 @@ class RecipeStepVC: UIViewController {
         detailBtn.setTitle("Mode per Langkah", for: .normal)
     
         detailBtn.layer.cornerRadius = 6
+        self.viewWithCorner.layer.cornerRadius = 18
         
         
         

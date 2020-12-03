@@ -25,7 +25,6 @@ class ReceiptVC: UIViewController {
     
     let database = CKContainer.default().publicCloudDatabase
     
-    @IBOutlet weak var searchBar: UISearchBar!
     
     var arrayReminder = [CKRecord]()
     var searchArr = [CKRecord]()
@@ -37,10 +36,15 @@ class ReceiptVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
       //  searchBar.delegate = self
-        self.navigationItem.title = "Daftar Resep"
-        let attribute = [NSAttributedString.Key.font:UIFont(name: "SFProRounded-Bold", size: 31)]
-        self.navigationController?.navigationBar.titleTextAttributes = attribute as [NSAttributedString.Key : Any]
+        let attrs = [
+            NSAttributedString.Key.foregroundColor: UIColor.white,
+            NSAttributedString.Key.font: UIFont(name: "SFProRounded-Bold", size: 24)!
+        ]
+
+        UINavigationBar.appearance().titleTextAttributes = attrs
         
+        let attribute = [NSAttributedString.Key.foregroundColor: UIColor.white, NSAttributedString.Key.font:UIFont(name: "SFProRounded-Bold", size: 32)]
+        self.navigationController?.navigationBar.largeTitleTextAttributes = attribute as [NSAttributedString.Key : Any]
         if #available(iOS 13.0, *) {
                 // Always adopt a light interface style.
                 overrideUserInterfaceStyle = .light
