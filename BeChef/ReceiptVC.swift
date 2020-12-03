@@ -38,8 +38,9 @@ class ReceiptVC: UIViewController {
         super.viewDidLoad()
       //  searchBar.delegate = self
         self.navigationItem.title = "Daftar Resep"
-        let attribute = [NSAttributedString.Key.font:UIFont(name: "SFProRounded-Bold", size: 32)]
+        let attribute = [NSAttributedString.Key.font:UIFont(name: "SFProRounded-Bold", size: 31)]
         self.navigationController?.navigationBar.titleTextAttributes = attribute as [NSAttributedString.Key : Any]
+        
         if #available(iOS 13.0, *) {
                 // Always adopt a light interface style.
                 overrideUserInterfaceStyle = .light
@@ -143,8 +144,15 @@ extension ReceiptVC: UITableViewDataSource,UITableViewDelegate{
         cell.cardView.layer.cornerRadius = 12.0
         
         //print("ini didalam \(finalbahan)")
+        
         cell.lbltitle?.text = item
+        cell.lbltitle.font = UIFont(name: "SFProRounded-Bold", size: 20)
+        cell.lbltitle.numberOfLines = 0
+        cell.lbltitle.textColor = UIColor(hexString: "0C1138")
         cell.lbldeskripsi?.text = items
+        cell.lbldeskripsi.font = UIFont(name: "SFProRounded-Light", size: 17)
+        cell.lbldeskripsi.numberOfLines = 0
+        cell.lbldeskripsi.textColor = UIColor(hexString: "0C1138")
         
       //    cell?.configure(picture: pictures[indexPath.row], title: titles[indexPath.row], description: descriptions[indexPath.row])
         

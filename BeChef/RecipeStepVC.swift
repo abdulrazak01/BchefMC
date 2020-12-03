@@ -34,14 +34,14 @@ class RecipeStepVC: UIViewController {
         
         
         tampilLabel()
-        lblTitleSea.text = "Seasoning"
-        lblTitleStep.text = "Instruction"
+        lblTitleSea.text = "Bahan Tambahan:"
+        lblTitleStep.text = "Langkah:"
         
         lbltitle.text = tittle
         lblbumbu.text = bumbu
         lblstep.text = stepToText.joined(separator: " \n")
         detailimg.image = image
-        lbltime.text = time
+        lbltime.text = "􀐯 Durasi \(time)"
         
         lbltitle.font = UIFont(name: "SFProRounded-Bold", size: 32)
         lblTitleSea.font = UIFont(name: "SFProRounded-Bold", size: 20)
@@ -51,10 +51,11 @@ class RecipeStepVC: UIViewController {
         lblbumbu.font = UIFont(name: "SFProRounded-Regular", size: 17)
         lblstep.font = UIFont(name: "SFProRounded-Regular", size: 17)
         lbltime.font = UIFont(name: "SFProRounded-Regular", size: 17)
+        lbltime.textColor = UIColor(hexString: "B5A3A3")
         
         
         detailBtn.titleLabel?.font = UIFont(name: "SFProRounded-Bold", size: 24)
-      
+        detailBtn.backgroundColor = UIColor(hexString: "FF6B00")
         detailBtn.setTitle("Mode per Langkah", for: .normal)
     
         detailBtn.layer.cornerRadius = 6

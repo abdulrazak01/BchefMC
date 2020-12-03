@@ -43,6 +43,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var searchButton: UIButton!
     @IBOutlet weak var lblSubTitle: UILabel!
     
+   
+    
     
     @IBOutlet weak var nasi: UIButton!
     @IBOutlet weak var mie: UIButton!
@@ -51,11 +53,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        self.navigationItem.title = "Mulai Memasak"
-                let attribute = [NSAttributedString.Key.font:UIFont(name: "SFProRounded-Bold", size: 38)]
-                self.navigationController?.navigationBar.titleTextAttributes = attribute as [NSAttributedString.Key : Any]
-        
+    
         nasi.layer.cornerRadius = 10.0
         mie.layer.cornerRadius = 10.0
         telur.layer.cornerRadius = 10.0
@@ -73,8 +71,22 @@ class ViewController: UIViewController {
         searchButton.backgroundColor = .gray
         searchButton.layer.cornerRadius = 10.0
         searchButton.setTitle("Ayo Masak!", for: .normal)
-        searchButton.titleLabel?.font = UIFont(name: "SFProRounded-Regular", size: 32)
+        searchButton.titleLabel?.font = UIFont(name: "SFProRounded-Bold", size: 32)
         
+        label()
+      
+        
+    }
+    
+    func label(){
+        //title Label
+        let titleLabel = UILabel(frame: CGRect(x: 20, y: 60, width: view.frame.size.width-40, height: 120))
+        titleLabel.textAlignment = .center
+        titleLabel.font = UIFont(name: "SFProRounded-Bold", size: 38)
+        titleLabel.textColor = .white
+        titleLabel.numberOfLines = 0
+        titleLabel.text = "Mulai Memasak"
+        view.addSubview(titleLabel)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
